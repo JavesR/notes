@@ -1,0 +1,4 @@
+## GYROFLUID MODELS OF PLASMA TURBULENCE
+
+William Douglass Dorland
+
