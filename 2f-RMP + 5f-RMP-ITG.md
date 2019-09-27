@@ -22,6 +22,12 @@
 
 #### 2. $\Delta'<0$时误差场引起的受迫磁重联(2f-p,2f-p-vl)
 
+不同边界磁扰动下磁岛的演化以及饱和磁岛宽度与边界磁扰动大小的关系：
+<center class="half">
+    <img src="./error field/2f_stable/w_t_psi.png" width="200"/>
+    <img src="./error field/2f_stable/sw_psi.png" width="200"/>
+</center>
+
 磁场演化以及有理面处的极向旋转演化：
 <center class="half">
     <img src="./error field/2f_stable/w_t.png" width="200"/>
@@ -36,9 +42,6 @@
 
 极向旋转对于误差场的渗透具有一定的屏蔽作用，边界的磁扰动的渗透会造成有理面处的锁模以及快速激发撕裂模。
 
-#### 3. 参数扫描
-主要是饱和磁场宽度和边界磁扰动大小的定标关系
-
 --- 
 ### 五场的结果
 - 五场程序目前对于$(1,0)$模式和zonal field并存下的结果不好，不能达到长时间的演化。
@@ -46,13 +49,28 @@
 - 对于$n=1$的模式只考虑$(2,1)$模
 - 湍流为环形ITG激发的湍流
 - 初始旋转的添加实际上是$E\times B$流的添加，即径向电场的添加，双流体下需要考虑抗磁性漂移和电漂移的共同作用
+
 #### 1. 平坦的压强剖面(5f-p)
-磁场宽度演化：
+两场的ZF并没有单独来解，这里先测试一下五场时两种不同解法下是否有差别，以下是动能的演化以及磁岛宽度的演化：
+<center class="half">
+    <img src="./error field/5f-0n0t/Ek_zf.png" width="200"/>
+    <img src="./error field/5f-0n0t/w_zf.png" width="200"/>
+</center>
+
+可以看出两种解法没有太大的差别，也说明了zf单独解的正确性
+
+验证5场下磁岛与边界磁扰动的定标关系：
+
+
+然后对比一下两场和五场下的磁场宽度以及有理面处旋转的演化：
 <center class="half">
     <img src="./error field/5f-0n0t/w_t.png" width="200"/>
+    <img src="./error field/5f-0n0t/vy_t.png" width="200"/>
 </center>
 
 考虑双流体效应之后，误差场更快地渗透并且激发撕裂模，但是撕裂模的饱和幅度比两场的稍小一点。
+
+
 
 
 #### 2. 平坦的密度剖面(5f-p-n)
