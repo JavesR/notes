@@ -26,29 +26,29 @@
 不同边界磁扰动下磁岛的演化以及饱和磁岛宽度与边界磁扰动大小的关系：
 $$ V_0=3.0, \psi_a=1\times 10^{-5} \sim 1\times 10^{-3} $$
 <center class="half">
-    <img src="./error field/2f_stable/w_t_psi.png" width="200"/>
-    <img src="./error field/2f_stable/sw_psi.png" width="200"/>
+    <img src="./error_field/2f_stable/w_t_psi.png" width="200"/>
+    <img src="./error_field/2f_stable/sw_psi.png" width="200"/>
 </center>
 
 不同旋转大小下磁场演化以及有理面处的极向旋转演化：
 $$ \psi_a =1\times 10^{-4}, V_0=3.0,5.0  $$
 <center class="half">
-    <img src="./error field/2f_stable/w_t.png" width="200"/>
-    <img src="./error field/2f_stable/v_t.png" width="200"/>
+    <img src="./error_field/2f_stable/w_t.png" width="200"/>
+    <img src="./error_field/2f_stable/v_t.png" width="200"/>
 </center>
 
 不同旋转大小下稳态磁岛宽度以及旋转大小：
 $$ \psi_a =1\times 10^{-4}, V_0=-7\sim 7  $$
 <center class="half">
-    <img src="./error field/2f_stable/sw_v.png" width="200"/>
-    <img src="./error field/2f_stable/sv_v.png" width="200"/>
+    <img src="./error_field/2f_stable/sw_v.png" width="200"/>
+    <img src="./error_field/2f_stable/sv_v.png" width="200"/>
 </center>
 
 不同时刻2/1本征模结构和旋转剖面：
 $$ \psi_a =1\times 10^{-4}, V_0=3.0 $$
 <center class="half">
-    <img src="./error field/2f_stable/eig.png" width="200"/>
-    <img src="./error field/2f_stable/v_x.png" width="200"/>
+    <img src="./error_field/2f_stable/eig.png" width="200"/>
+    <img src="./error_field/2f_stable/v_x.png" width="200"/>
 </center>
 
 > 极向旋转对于误差场的渗透具有一定的屏蔽作用，边界的磁扰动的渗透会造成有理面处的锁模以及快速激发撕裂模。
@@ -64,38 +64,38 @@ $$ \psi_a =1\times 10^{-4}, V_0=3.0 $$
 #### 1. 平坦的压强剖面
 - 两场的ZF并没有单独来解，这里先测试一下五场时两种不同解法下是否有差别，以下是动能的演化以及磁岛宽度的演化：
 <center class="half">
-    <img src="./error field/5f-0n0t/Ek_zf.png" width="200"/>
-    <img src="./error field/5f-0n0t/w_zf.png" width="200"/>
+    <img src="./error_field/5f-0n0t/Ek_zf.png" width="200"/>
+    <img src="./error_field/5f-0n0t/w_zf.png" width="200"/>
 </center>
 
 > 可以看出两种解法没有太大的差别，也说明了zf单独解的正确性
 
 - 单模和多模的区别
 <center class="half">
-    <img src="./error field/5f-0n0t/Ek_mn.png" width="200"/>
-    <img src="./error field/5f-0n0t/w_mn.png" width="200"/>
+    <img src="./error_field/5f-0n0t/Ek_mn.png" width="200"/>
+    <img src="./error_field/5f-0n0t/w_mn.png" width="200"/>
 </center>
 
 > 饱和磁岛宽度略有差别，演化趋势以及渗透阈值都变化不大，可以先用单模计算来找一下参数看一下变化
 
 - 验证5场下磁岛与边界磁扰动的定标关系：
 <center class="half">
-    <img src="./error field/5f-0n0t/w_t_v.png" width="200"/>
-    <img src="./error field/5f-0n0t/sw_psi.png" width="200"/>
+    <img src="./error_field/5f-0n0t/w_t_v.png" width="200"/>
+    <img src="./error_field/5f-0n0t/sw_psi.png" width="200"/>
 </center>
 
 - 对比两场和五场下的磁场宽度以及有理面处旋转的演化：
 <center class="half">
-    <img src="./error field/5f-0n0t/w_t.png" width="200"/>
-    <img src="./error field/5f-0n0t/vy_t.png" width="200"/>
+    <img src="./error_field/5f-0n0t/w_t.png" width="200"/>
+    <img src="./error_field/5f-0n0t/vy_t.png" width="200"/>
 </center>
 
 > 考虑双流体效应之后，误差场更快地渗透并且激发撕裂模，但是撕裂模的饱和幅度比两场的稍小一点。
 
 - 饱和磁岛宽度和旋转的关系
 <center class="half">
-    <img src="./error field/5f-0n0t/sw_v.png" width="200"/>
-    <img src="./error field/5f-0n0t/sv_v.png" width="200"/>
+    <img src="./error_field/5f-0n0t/sw_v.png" width="200"/>
+    <img src="./error_field/5f-0n0t/sv_v.png" width="200"/>
 </center>
 
 > 跟两场的结果保持大致的一致性
@@ -104,10 +104,10 @@ $$ \psi_a =1\times 10^{-4}, V_0=3.0 $$
 #### 2. 平坦的温度剖面
 $$ n = 0.7 + 0.3(1-(r/a)^2)^2 $$
 
-- 固定密度剖面
+- 固定的密度剖面
 <center class="half">
-    <img src="./error field/5f-1n0t/fix n/sw_v.png" width="200"/>
-    <img src="./error field/5f-1n0t/fix n/sv_v.png" width="200"/>
+    <img src="./error_field/5f-1n0t/fix_n/sw_v.png" width="200"/>
+    <img src="./error_field/5f-1n0t/fix_n/sv_v.png" width="200"/>
 </center>
 
 > - 紫线为抗磁性漂移速度的相反数
@@ -117,11 +117,28 @@ $$ n = 0.7 + 0.3(1-(r/a)^2)^2 $$
 
 - 演化的密度剖面
 <center class="half">
-    <img src="./error field/5f-1n0t/no fix/sw_v.png" width="200"/>
-    <img src="./error field/5f-1n0t/no fix/sv_v.png" width="200"/>
+    <img src="./error_field/5f-1n0t/no_fix/sw_v.png" width="200"/>
+    <img src="./error_field/5f-1n0t/no_fix/sv_v.png" width="200"/>
 </center>
 
 > - 渗透的窗口扩大了(和一般的结论不太一样，一般的冷离子的模拟中窗口大小变化不大，主要是窗口的移动)
 > - 由于磁岛的形成导致密度剖面的展平，所以最后电漂移和抗磁性漂移都为零
 
 #### 3. 非平坦的温度剖面
+首先考虑没有湍流的情况下： 
+$$ n，T = 0.7 + 0.3(1-(r/a)^2)^2 $$
+- 固定的压强剖面
+<center class="half">
+    <img src="./error_field/5f-1n1t/no_t/sw_v.png" width="200"/>
+    <img src="./error_field/5f-1n1t/no_t/sv_v.png" width="200"/>
+</center>
+
+> 电漂移速度最终不等于电子密度梯度产生的抗磁性漂移速度，这个差值应该是电子朗道阻尼项起作用，和离子温度引起的抗磁性漂移有关，但是物理图像还不清楚
+
+- 演化的压强剖面
+<center class="half">
+    <img src="./error_field/5f-1n1t/no_t/sw_v_1t.png" width="200"/>
+    <img src="./error_field/5f-1n1t/no_t/sv_v_1t.png" width="200"/>
+</center>
+
+> 电漂移速度最后等于零

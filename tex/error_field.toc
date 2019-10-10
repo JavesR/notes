@@ -1,0 +1,9 @@
+\contentsline {part}{I\hspace {1em}两场单流体模拟}{1}
+\contentsline {section}{\numberline {1}初始设置}{1}
+\contentsline {section}{\numberline {2}$\Delta '<0$时误差场引起的受迫磁重联}{2}
+\contentsline {part}{II\hspace {1em}五场双流体模拟}{4}
+\contentsline {section}{\numberline {3}平坦的压强剖面}{4}
+\contentsline {section}{\numberline {4}平坦的温度剖面}{7}
+\contentsline {section}{\numberline {5}非平坦的温度剖面}{8}
+\contentsline {subsection}{\numberline {5.1}不考虑湍流}{8}
+\contentsline {subsection}{\numberline {5.2}考虑湍流}{9}

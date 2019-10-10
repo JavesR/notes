@@ -1,0 +1,74 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage{xeCJK}
+\usepackage{geometry}
+\geometry{left=2.0cm,right=2.0cm,top=2.0cm,bottom=2.0cm}
+
+\title{磁面坐标下朗道流体程序的开发}
+\author{任广智}
+\date{\today}
+
+
+\begin{document}
+	
+\maketitle
+	
+\section{初始设置}	
+\subsection{坐标系的建立} 
+\subsection{方程变换} 
+首先是$V_E\cdot\nabla$，这里考虑 $B_T \gg B_p$的近似，即$\pmb{B}=\pmb{B_T}=g(\psi)\nabla\phi$。但是这种假设并不是真正考虑了$k_\parallel\ll k_\perp$的结果，这一点在field aligned的坐标系下比较容易做到。所以如果是三维有限差分的话，需要考虑上$B_p$的贡献。
+
+$$
+\begin{aligned}
+V_E\cdot\nabla f
+&= -\frac{\nabla\Phi\times\pmb{B_T}}{B^2_0}\cdot\nabla f \\  
+&= \frac{1}{B_0^2}\nabla\Phi\times\nabla f\cdot g(\psi)\nabla\phi \\ 
+&= \frac{g}{JB^2_0}(\Phi_\psi f_\theta - \Phi_\theta f_\psi) \\
+&= \frac{g}{JB^2_0}[\Phi,f] 
+\end{aligned}    
+$$	
+	
+$$
+\begin{aligned}
+V_E\cdot\nabla f_0(\psi)
+&= -\frac{\nabla\Phi\times\pmb{B_T}}{B^2_0}\cdot\nabla f_0 \\
+&= -\frac{g}{JB^2_0} \Phi_\theta f_\psi
+\end{aligned}
+$$
+	
+平行微分算符$\nabla_\parallel$
+$$ 
+\nabla_\parallel f = \pmb{b_0}\cdot\nabla f = -\frac{\Psi'J^{-1}}{B_0}(f_\theta + qf_\phi)  
+$$
+	
+拉普拉斯算符$\nabla^2_\perp$，目前使用的一些基本算湍流输运的流体方程中，我们只使用了垂直磁场方向的laplace算符，同上边的对流项，这里的垂直不并不是严格意义上的垂直，而是在$(\psi,\theta)$平面的算符，严格的计算也会加入后续比较，即$\nabla^2_\perp f= \nabla^2 f - \nabla^2_\parallel f$，暂时如下计算：
+$$
+\begin{aligned}
+\nabla_\perp^2 f  
+&= \nabla\cdot(f_\psi \nabla\psi + f_\theta\nabla\theta) \\
+&= \nabla\cdot[ (f_\psi J_{11} + f_\theta J_{21}) \nabla\theta\times\nabla\phi\mathcal{J} + (f_\psi J_{12}+f_\theta J_{22}) \nabla\phi\times\nabla\psi\mathcal{J} ] \\
+&= \frac{1}{\mathcal{J}} 
+[ \frac{\partial}{\partial_\psi}\mathcal{J}(J_{11}f_\psi + J_{21}f_\theta) 
++\frac{\partial}{\partial_\theta}\mathcal{J}(J_{12}f_\psi + J_{22}f_\theta) ]  
+\end{aligned}
+$$
+
+磁曲率项
+$$
+\begin{aligned}
+\nabla\cdot{\pmb{V_E}} 
+&= \nabla(\frac{1}{B_0^2})\cdot(\pmb{B_0}\times\nabla\Phi) \\
+&= \frac{2}{B_0^3}\nabla{B_0}\cdot(\nabla\Phi\times\pmb{B_0}) \\
+&\approx \frac{2}{B_0^2}\nabla{B_0}\times\nabla\Phi\cdot\pmb{B_T}    \\
+&= \frac{2g}{\mathcal{J}B_0^3}[B_0,\Phi]  
+\end{aligned}
+$$
+
+\section{简单的测试}
+
+
+\end{document}
