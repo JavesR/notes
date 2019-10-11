@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.4.27)  10 OCT 2019 21:53
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.7.6)  11 OCT 2019 13:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,9 +6,9 @@ entering extended mode
 (./psi.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/base/article.cls
+(/home/jr/software/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/base/size11.clo
+(/home/jr/software/texlive/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
@@ -23,24 +23,24 @@ File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+(/home/jr/software/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+(/home/jr/software/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/home/jr/software/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks14
 \ex@=\dimen103
 ))
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/home/jr/software/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen104
 )
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/home/jr/software/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count88
@@ -81,40 +81,41 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/home/jr/software/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/home/jr/software/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+(/home/jr/software/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+(/home/jr/software/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
 )
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+(/home/jr/software/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+(/home/jr/software/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/home/jr/software/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 99.
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/graphics-def/xetex.def
+
+(/home/jr/software/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
 File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/subfigure/subfigure.sty
+(/home/jr/software/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip46
 \subfigcapskip=\skip47
@@ -130,11 +131,11 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+(/home/jr/software/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
 \subfig@top=\skip50
 \subfig@bottom=\skip51
 )
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/float/float.sty
+(/home/jr/software/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count104
 \float@exts=\toks20
@@ -142,11 +143,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks21
 \@floatcapt=\box29
 )
-(/home/jr/software/texlive/2018/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/home/jr/software/texlive/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
+(/home/jr/software/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2018/03/05 L3 programming layer (loader) 
 
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+(/home/jr/software/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
 Package: expl3 2018/03/05 L3 programming layer (code)
 \c_max_int=\count105
 \l_tmpa_int=\count106
@@ -285,22 +286,21 @@ Package: expl3 2018/03/05 L3 programming layer (code)
 \l__coffin_scaled_total_height_dim=\dimen145
 \l__coffin_scaled_width_dim=\dimen146
 )
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
+(/home/jr/software/texlive/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
 File: l3xdvidpfmx.def 2017/03/18 v L3 Experimental driver: xdvipdfmx
 \g__driver_image_int=\count183
 ))
 Package: xeCJK 2018/04/07 v3.7.0 Typesetting CJK scripts with XeLaTeX
 
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/l3packages/xtemplate/xtemp
-late.sty
+(/home/jr/software/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.
+sty
 Package: xtemplate 2018/02/21 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen147
 \l__xtemplate_tmp_int=\count184
 \l__xtemplate_tmp_muskip=\muskip17
 \l__xtemplate_tmp_skip=\skip58
 )
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/l3packages/xparse/xparse.s
-ty
+(/home/jr/software/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2018/02/21 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count185
 \g__xparse_grabber_int=\count186
@@ -308,8 +308,8 @@ Package: xparse 2018/02/21 L3 Experimental document command parser
 \l__xparse_mandatory_args_int=\count188
 \l__xparse_v_nesting_int=\count189
 )
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys
-2e.sty
+(/home/jr/software/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.st
+y
 Package: l3keys2e 2018/02/21 LaTeX2e option processing using LaTeX3 keys
 )
 \l__xeCJK_tmp_int=\count190
@@ -532,12 +532,10 @@ Package: l3keys2e 2018/02/21 LaTeX2e option processing using LaTeX3 keys
 . Defining command \xeCJKOffVerbAddon with sig. '' on line 4121.
 .................................................
 \l__xeCJK_verb_exspace_skip=\skip64
-
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/fontspec/fontspec.sty
+ (/home/jr/software/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
 Package: fontspec 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTeX
 
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/fontspec/fontspec-xetex.st
-y
+(/home/jr/software/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTe
 X
 \l__fontspec_script_int=\count267
@@ -552,10 +550,11 @@ X
 \l__fontspec_tmpb_dim=\dimen177
 \l__fontspec_tmpc_dim=\dimen178
 \g__file_internal_ior=\read1
- (/home/jr/software/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
+
+(/home/jr/software/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/base/tuenc.def
+(/home/jr/software/texlive/texmf-dist/tex/latex/base/tuenc.def
 File: tuenc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
 ))
@@ -730,7 +729,7 @@ LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
 . Defining command \UndeclareComposite with sig. 'mm' on line 3706.
 .................................................
 
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/fontspec/fontspec.cfg)
+(/home/jr/software/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)
 LaTeX Info: Redefining \itshape on input line 3891.
 LaTeX Info: Redefining \slshape on input line 3896.
 LaTeX Info: Redefining \scshape on input line 3901.
@@ -820,20 +819,20 @@ LaTeX Info: Redefining \- on input line 4015.
 . Redefining command \fontfamily with sig. 'm' on line 4628.
 .................................................
 
-(/home/jr/software/texlive/2018/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
+(/home/jr/software/texlive/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
 File: xeCJK.cfg 2018/04/07 v3.7.0 Configuration file for xeCJK package
 ))
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+(/home/jr/software/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2018/03/24 v5.7 Page Geometry
 
-(/home/jr/software/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/home/jr/software/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
-(/home/jr/software/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+(/home/jr/software/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/home/jr/software/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/home/jr/software/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count275
@@ -849,22 +848,22 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen186
 \Gm@dimlist=\toks22
 )
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
+(/home/jr/software/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/base/t1enc.def
+(/home/jr/software/texlive/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 )
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 105.
 
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/lm/t1lmr.fd
+(/home/jr/software/texlive/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/home/jr/software/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/home/jr/software/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: xetex.def on input line 225.
@@ -877,7 +876,7 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+(/home/jr/software/texlive/texmf-dist/tex/latex/lm/lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -912,7 +911,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/listings/listings.sty
+(/home/jr/software/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count278
 \lst@gtempboxa=\box46
 \lst@token=\toks23
@@ -926,21 +925,21 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 \lst@lineno=\count283
 \lst@maxwidth=\dimen190
 
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
+(/home/jr/software/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count284
 \lst@skipnumbers=\count285
 \lst@framebox=\box47
 )
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg
+(/home/jr/software/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
+(/home/jr/software/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
+(/home/jr/software/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 *************************************************
@@ -972,12 +971,12 @@ ai-Regular}].
 . - 'italic' (m/it) with NFSS spec.: <->"[FandolKai-Regular.otf]/OT"
 . - 'italic small caps'  (m/itsc) with NFSS spec.: 
 .................................................
-
-(/home/jr/software/texlive/2018/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
+(/home/jr/software/texlive/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
 Package: xeCJK-listings 2018/04/07 v3.7.0 xeCJK patch file for listings
 \l__xeCJK_listings_max_char_int=\count287
 \l__xeCJK_listings_flag_int=\count288
-) (./psi.aux)
+)
+(./psi.aux)
 \openout1 = `psi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
@@ -1031,24 +1030,24 @@ LaTeX Font Info:    ... okay on input line 48.
 
 \c@lstlisting=\count289
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 50.
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/lm/ot1lmr.fd
+(/home/jr/software/texlive/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 50.
 
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/lm/omllmm.fd
+(/home/jr/software/texlive/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 50.
 
 
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/lm/omslmsy.fd
+(/home/jr/software/texlive/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMX+lmex on input line 50.
 
 
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/lm/omxlmex.fd
+(/home/jr/software/texlive/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1059,80 +1058,54 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 50.
 LaTeX Font Info:    Try loading font information for U+msa on input line 50.
 
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/home/jr/software/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 50.
 
-(/home/jr/software/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/home/jr/software/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 298.
+
+
+(/home/jr/software/texlive/texmf-dist/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 298.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 71.
+(Font)              <10.95> on input line 298.
+File: ../psi-code/f2d/jacob.png Graphic file (type bmp)
+<../psi-code/f2d/jacob.png>
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 312.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 312.
+File: ../psi-code/f2d/q_local.png Graphic file (type bmp)
+<../psi-code/f2d/q_local.png>
+File: ../psi-code/f2d/coef_con_a.png Graphic file (type bmp)
+<../psi-code/f2d/coef_con_a.png>
+File: ../psi-code/f2d/coef_cur_a.png Graphic file (type bmp)
+<../psi-code/f2d/coef_cur_a.png>
+File: ../psi-code/f2d/test_poisson.png Graphic file (type bmp)
+<../psi-code/f2d/test_poisson.png>
+File: ../psi-code/f2d/test_cur.png Graphic file (type bmp)
+<../psi-code/f2d/test_cur.png>
+File: ../psi-code/f2d/test_gradp.png Graphic file (type bmp)
+<../psi-code/f2d/test_gradp.png>
+File: ../psi-code/f2d/test_ld.png Graphic file (type bmp)
+<../psi-code/f2d/test_ld.png>
  [1
 
-]
-[2]
-File: ../psi-code/test_01/test_01_t0.png Graphic file (type bmp)
-<../psi-code/test_01/test_01_t0.png>
-File: ../psi-code/test_01/test_01_t100.png Graphic file (type bmp)
-<../psi-code/test_01/test_01_t100.png>
-File: ../psi-code/test_01/test_01_t200.png Graphic file (type bmp)
-<../psi-code/test_01/test_01_t200.png>
-File: ../psi-code/test_01/test_01_t300.png Graphic file (type bmp)
-<../psi-code/test_01/test_01_t300.png>
-File: ../psi-code/test_01/test_01_t400.png Graphic file (type bmp)
-<../psi-code/test_01/test_01_t400.png>
-File: ../psi-code/test_01/test_01_t500.png Graphic file (type bmp)
-<../psi-code/test_01/test_01_t500.png>
-File: ../psi-code/test_01/test_01_t600.png Graphic file (type bmp)
-<../psi-code/test_01/test_01_t600.png>
-File: ../psi-code/test_01/test_01_t700.png Graphic file (type bmp)
-<../psi-code/test_01/test_01_t700.png>
-File: ../psi-code/test_01/test_01_t800.png Graphic file (type bmp)
-<../psi-code/test_01/test_01_t800.png>
-File: ../psi-code/test_01/test_01_t900.png Graphic file (type bmp)
-<../psi-code/test_01/test_01_t900.png>
- [3]
-File: ../psi-code/test_02/test_02_t0.png Graphic file (type bmp)
-<../psi-code/test_02/test_02_t0.png>
-File: ../psi-code/test_02/test_02_t100.png Graphic file (type bmp)
-<../psi-code/test_02/test_02_t100.png>
-File: ../psi-code/test_02/test_02_t200.png Graphic file (type bmp)
-<../psi-code/test_02/test_02_t200.png>
-File: ../psi-code/test_02/test_02_t300.png Graphic file (type bmp)
-<../psi-code/test_02/test_02_t300.png>
-File: ../psi-code/test_02/test_02_t400.png Graphic file (type bmp)
-<../psi-code/test_02/test_02_t400.png>
-File: ../psi-code/test_02/test_02_t500.png Graphic file (type bmp)
-<../psi-code/test_02/test_02_t500.png>
-File: ../psi-code/test_02/test_02_t600.png Graphic file (type bmp)
-<../psi-code/test_02/test_02_t600.png>
-File: ../psi-code/test_02/test_02_t700.png Graphic file (type bmp)
-<../psi-code/test_02/test_02_t700.png>
-File: ../psi-code/test_02/test_02_t800.png Graphic file (type bmp)
-<../psi-code/test_02/test_02_t800.png>
-File: ../psi-code/test_02/test_02_t900.png Graphic file (type bmp)
-<../psi-code/test_02/test_02_t900.png>
-File: ../psi-code/test_03/test_03_0.png Graphic file (type bmp)
-<../psi-code/test_03/test_03_0.png>
-File: ../psi-code/test_03/test_03_m02.png Graphic file (type bmp)
-<../psi-code/test_03/test_03_m02.png>
- [4]
-File: ../psi-code/test_06/coef.png Graphic file (type bmp)
-<../psi-code/test_06/coef.png>
-File: ../psi-code/test_06/test_06_01.png Graphic file (type bmp)
-<../psi-code/test_06/test_06_01.png>
-File: ../psi-code/test_06/test_06_02.png Graphic file (type bmp)
-<../psi-code/test_06/test_06_02.png>
- [5] [6] (./psi.aux) ) 
+] (./psi.aux) ) 
 Here is how much of TeX's memory you used:
- 15986 strings out of 492970
- 343397 string characters out of 6130998
- 471023 words of memory out of 5000000
- 19839 multiletter control sequences out of 15000+600000
- 570617 words of font info for 62 fonts, out of 8000000 for 9000
+ 15633 strings out of 492970
+ 336059 string characters out of 6133099
+ 461023 words of memory out of 5000000
+ 19497 multiletter control sequences out of 15000+600000
+ 572636 words of font info for 69 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 42i,11n,64p,10431b,1233s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,7n,64p,10431b,278s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on psi.pdf (6 pages).
+Output written on psi.pdf (1 page).
