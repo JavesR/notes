@@ -297,9 +297,9 @@ $$
 
 \begin{enumerate}
  	\item 设定一个q剖面，这里是一个global的剖面，剖面与小柱坐标系下相同,程序中真正的q剖面为其相反数
- 	\item 得到$\Psi$和$Psi'$
- 		$$\Psi = \int \frac{rB_0}{qR_0} dr $$ 
- 		$$\Psi' = \frac{arB_0}{qR_0}  $$
+ 	\item 得到$\Psi$和$\Psi'$
+ 		$$\Psi = \int \frac{rB_0}{q} dr $$ 
+ 		$$\Psi' = \frac{arB_0}{q}  $$
 	\item 坐标的微分量 
 		$$ R_\psi = a\cos\theta, R_\theta = -r\sin\theta $$
 		$$ Z_\psi = a\sin\theta, Z_\theta =  r\cos\theta $$
@@ -311,9 +311,14 @@ $$
 		$$ |\nabla\psi| = 1/a, |\nabla\theta| = 1/r, \nabla\theta\cdot\nabla\psi = 0 $$ 
 	\item q剖面
 		$$ q_{local} = -\frac{gJ}{\Psi'R^2} $$
-		$$ q_{global} = 
-
+		$$ 
+		q_{global} = \frac{1}{2\pi}\int_{0}^{2\pi}\hat{q}d\theta
+		=-\frac{1}{2\pi}\frac{g}{\Psi'}\int_{0}^{2\pi}\frac{J}{R^2}d\theta
+		$$
 \end{enumerate}
+
+
+
 
 
 %\section{三场圆截面}
