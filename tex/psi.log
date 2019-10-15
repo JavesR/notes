@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.7.6)  11 OCT 2019 13:08
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.7.6)  15 OCT 2019 11:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1066,46 +1066,19 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 50.
 (/home/jr/software/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 298.
-
-
-(/home/jr/software/texlive/texmf-dist/tex/latex/lm/omslmr.fd
-File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 298.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 298.
-File: ../psi-code/f2d/jacob.png Graphic file (type bmp)
-<../psi-code/f2d/jacob.png>
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 312.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 312.
-File: ../psi-code/f2d/q_local.png Graphic file (type bmp)
-<../psi-code/f2d/q_local.png>
-File: ../psi-code/f2d/coef_con_a.png Graphic file (type bmp)
-<../psi-code/f2d/coef_con_a.png>
-File: ../psi-code/f2d/coef_cur_a.png Graphic file (type bmp)
-<../psi-code/f2d/coef_cur_a.png>
-File: ../psi-code/f2d/test_poisson.png Graphic file (type bmp)
-<../psi-code/f2d/test_poisson.png>
-File: ../psi-code/f2d/test_cur.png Graphic file (type bmp)
-<../psi-code/f2d/test_cur.png>
-File: ../psi-code/f2d/test_gradp.png Graphic file (type bmp)
-<../psi-code/f2d/test_gradp.png>
-File: ../psi-code/f2d/test_ld.png Graphic file (type bmp)
-<../psi-code/f2d/test_ld.png>
+(Font)              <10.95> on input line 94.
  [1
 
-] (./psi.aux) ) 
+] [2]
+(./psi.aux) ) 
 Here is how much of TeX's memory you used:
- 15633 strings out of 492970
- 336059 string characters out of 6133099
- 461023 words of memory out of 5000000
- 19497 multiletter control sequences out of 15000+600000
- 572636 words of font info for 69 fonts, out of 8000000 for 9000
+ 15568 strings out of 492970
+ 335370 string characters out of 6133099
+ 463023 words of memory out of 5000000
+ 19455 multiletter control sequences out of 15000+600000
+ 564624 words of font info for 59 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 42i,7n,64p,10431b,278s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,11n,64p,10431b,247s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on psi.pdf (1 page).
+Output written on psi.pdf (2 pages).

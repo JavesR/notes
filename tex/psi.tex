@@ -89,38 +89,38 @@
 %dth  间距大小 
 %\end{lstlisting}
 %
-%\subsection{平衡量表示}
-%雅克比的计算有两种方法，可以相互比较和对照 
-%$$J(\psi,\theta) = R(R_\theta Z_\psi-R_\psi Z_\theta)$$ $$J(\psi,\theta) = \oint\frac{R}{J_{tmp}|\nabla\psi|}dl_p/{2\pi} J_{tmp}$$
-%
-%在定义一些微分算符之前，我们需要计算出所需要的度量张量的各个分量,这些分量在一般的矢量计算中会用到。包括 
-%$$J_{11} = |\nabla\psi|^2 = \frac{R^2}{J^2}(R_\theta^2 + Z_\theta^2)$$ 
-%$$J_{22} = |\nabla\theta|^2 = \frac{R^2}{J^2}(R_\psi^2 + Z_\psi^2)$$ $$J_{33} = |\nabla\phi|^2 = \frac{1}{R^2} $$ 
-%$$J_{12} = J_{21} = \nabla\theta\cdot\nabla\psi = -\frac{R^2}{J^2}(R_\psi R_\theta + Z_\psi Z_\theta) $$
-%
-%现在我们可以推导一些流体方程中出现的算符和项的具体表现形式了。
-%磁场和磁场各个分量 ：
-%$$ \pmb{B_0} = \nabla\times\pmb{A} $$ 
-%$$ \pmb{B_0} = \nabla\times(A_\phi\hat\phi) + (\frac{\partial{A_R}} {\partial{Z}}-\frac{\partial(A_Z)}{\partial{R}})\hat\phi $$ 
-%$$ \Psi(R,Z) = RA_\phi $$ 
-%$$ \pmb{B_0} = \nabla\Psi(R,Z)\times\nabla\phi+g(R,Z)\nabla\phi $$ $$ \pmb{B_p} = \nabla\Psi(R,Z)\times\nabla\phi $$ 
-%$$ \pmb{B_t} = g(R,Z)\nabla\phi $$ 
-%$$ B_R = -\frac{1}{R}\frac{\partial\Psi}{\partial{Z}} $$ 
-%$$ B_Z = \frac{1}{R}\frac{\partial\Psi}{\partial{R}} $$
-%这里$q$为local的$q$,$q = q(\psi)$只在straight field line的时候成立 
-%$$ 
-%\begin{aligned} 
-%q(\psi,\theta) &=\frac{\pmb{B_0}\cdot\nabla\phi}{\pmb{B_0}\cdot\nabla\theta} \\ 
-%&= -\frac{gJ}{\Psi'R^2} 
-%\end{aligned} 
-%$$
-%
-%$$ 
-%\begin{aligned} 
-%\pmb{B_0} &= \Psi'\nabla\psi\times\nabla\phi + g(\psi)\nabla\phi \\ 
-%&= \Psi'[\nabla\psi\times\nabla\phi - q(\psi,\theta)\nabla\psi\times\theta] \\ 
-%&= (\Psi'\frac{J}{R^2}\nabla\theta\cdot\nabla\psi)\nabla\psi + (-\Psi'\frac{J}{R^2}|\nabla\psi|^2)\nabla\theta + g(\psi)\nabla\phi \end{aligned} 
-%$$
+\subsection{平衡量表示}
+雅克比的计算有两种方法，可以相互比较和对照 
+$$J(\psi,\theta) = R(R_\theta Z_\psi-R_\psi Z_\theta)$$ $$J(\psi,\theta) = \oint\frac{R}{J_{tmp}|\nabla\psi|}dl_p/{2\pi} J_{tmp}$$
+
+在定义一些微分算符之前，我们需要计算出所需要的度量张量的各个分量,这些分量在一般的矢量计算中会用到。包括 
+$$J_{11} = |\nabla\psi|^2 = \frac{R^2}{J^2}(R_\theta^2 + Z_\theta^2)$$ 
+$$J_{22} = |\nabla\theta|^2 = \frac{R^2}{J^2}(R_\psi^2 + Z_\psi^2)$$ $$J_{33} = |\nabla\phi|^2 = \frac{1}{R^2} $$ 
+$$J_{12} = J_{21} = \nabla\theta\cdot\nabla\psi = -\frac{R^2}{J^2}(R_\psi R_\theta + Z_\psi Z_\theta) $$
+
+现在我们可以推导一些流体方程中出现的算符和项的具体表现形式了。
+磁场和磁场各个分量 ：
+$$ \pmb{B_0} = \nabla\times\pmb{A} $$ 
+$$ \pmb{B_0} = \nabla\times(A_\phi\hat\phi) + (\frac{\partial{A_R}} {\partial{Z}}-\frac{\partial(A_Z)}{\partial{R}})\hat\phi $$ 
+$$ \Psi(R,Z) = RA_\phi $$ 
+$$ \pmb{B_0} = \nabla\Psi(R,Z)\times\nabla\phi+g(R,Z)\nabla\phi $$ $$ \pmb{B_p} = \nabla\Psi(R,Z)\times\nabla\phi $$ 
+$$ \pmb{B_t} = g(R,Z)\nabla\phi $$ 
+$$ B_R = -\frac{1}{R}\frac{\partial\Psi}{\partial{Z}} $$ 
+$$ B_Z = \frac{1}{R}\frac{\partial\Psi}{\partial{R}} $$
+这里$q$为local的$q$,$q = q(\psi)$只在straight field line的时候成立 
+$$ 
+\begin{aligned} 
+q(\psi,\theta) &=\frac{\pmb{B_0}\cdot\nabla\phi}{\pmb{B_0}\cdot\nabla\theta} \\ 
+&= -\frac{gJ}{\Psi'R^2} 
+\end{aligned} 
+$$
+
+$$ 
+\begin{aligned} 
+\pmb{B_0} &= \Psi'\nabla\psi\times\nabla\phi + g(\psi)\nabla\phi \\ 
+&= \Psi'[\nabla\psi\times\nabla\phi - q(\psi,\theta)\nabla\psi\times\theta] \\ 
+&= (\Psi'\frac{J}{R^2}\nabla\theta\cdot\nabla\psi)\nabla\psi + (-\Psi'\frac{J}{R^2}|\nabla\psi|^2)\nabla\theta + g(\psi)\nabla\phi \end{aligned} 
+$$
 %
 %
 %
@@ -291,56 +291,116 @@
 %	\caption{}
 %\end{figure}
 
+\section{圆截面近似平衡设置}
 
-\section{三场圆截面}
-实际上径向坐标用归一化小半径代替，以下为一些参数设置
-\begin{itemize}
-	\item 环向磁场，$ g = -B_0R_0 $，环向磁场沿着$-\nabla\phi$用来和原始的$(r,\theta,\zeta)$进行对比。
-	\item 极向磁场，$ \Psi = \int{ rB_0/q_{tmp} dr}, \Psi' = arB_0/q_{tmp} $ ，沿着$\theta$正方向。
-	\item 度量分量，$ R_\psi = a\cos\theta $, $ R_\theta = -ar\sin\theta $, $ Z_\psi = a\sin\theta $, $ Z_\theta = ar\sin\theta $
-	\item 雅克比， $ J = R( R_\theta Z_\psi-R_\psi Z_\theta ) $
-	\item $q_{local}$， $ q(\psi,\theta) = -\frac{gJ}{R^2 \Psi} $
-	\item $q_{global}$， $ q_{global} = -\frac{1}{2\pi}\frac{g}{\Psi'}\int_{0}^{2\pi}\frac{J}{R^2}d\theta $, $q_{local}$的极向平均，左手系下和$q_{tmp}$相反
-\end{itemize}
+这里设置一个圆截面的平衡，主要用来近似小柱坐标系下的情况，将$\psi$设为$r$，选择equal are length的情况，所以$\theta$等同于极向角。方便起见，无量纲坐标分量用$(\psi,\theta,\phi)$和$(r,\theta,\zeta)$表示，带量纲的小半径用$r$表示
 
-小柱坐标系下圆截面相当于磁面坐标下equal arc length的情况，这时$q_{local}$并不只是$\psi$的函数，小柱坐标系下进行了近似。
+\begin{enumerate}
+ 	\item 设定一个q剖面，这里是一个global的剖面，剖面与小柱坐标系下相同,程序中真正的q剖面为其相反数
+ 	\item 得到$\Psi$和$Psi'$
+ 		$$\Psi = \int \frac{rB_0}{qR_0} dr $$ 
+ 		$$\Psi' = \frac{arB_0}{qR_0}  $$
+	\item 坐标的微分量 
+		$$ R_\psi = a\cos\theta, R_\theta = -r\sin\theta $$
+		$$ Z_\psi = a\sin\theta, Z_\theta =  r\cos\theta $$
+	\item 计算雅克比
+		$$ J = R(R_\theta Z_\psi - R_\psi Z_\theta) $$
+		实际为
+		$$ J = -arR $$
+	\item 计算度量张量
+		$$ |\nabla\psi| = 1/a, |\nabla\theta| = 1/r, \nabla\theta\cdot\nabla\psi = 0 $$ 
+	\item q剖面
+		$$ q_{local} = -\frac{gJ}{\Psi'R^2} $$
+		$$ q_{global} = 
 
-\begin{figure}[H]
-	\centering
-	\subfigure[$J$]{
-		\includegraphics[width=0.2\textwidth]{../psi-code/f2d/jacob.png} 
-	}
-	\subfigure[$q_{local}$]{
-		\includegraphics[width=0.2\textwidth]{../psi-code/f2d/q_local.png}
-	}
-	\subfigure[对流项系数$\sim 1/r$]{
-		\includegraphics[width=0.2\textwidth]{../psi-code/f2d/coef_con_a.png} 
-	}
-	\subfigure[曲率项系数]{
-		\includegraphics[width=0.2\textwidth]{../psi-code/f2d/coef_cur_a.png} 
-	}
-	\caption{平衡常量对比}
-\end{figure}
-
-以下是相同矩阵的各种项的解，计算的差异主要来自于平行算符归一化时候出现的环径比因子，这个因子在小柱坐标系中是近似而来的，这里全部的微分算符采用二阶精度
-\begin{figure}[H]
-	\centering
-	\subfigure[泊松方程的解]{
-		\includegraphics[width=0.2\textwidth]{../psi-code/f2d/test_poisson.png} 
-	}
-	\subfigure[曲率项]{
-		\includegraphics[width=0.2\textwidth]{../psi-code/f2d/test_cur.png}
-	}
-	\subfigure[平行微分项]{
-		\includegraphics[width=0.2\textwidth]{../psi-code/f2d/test_gradp.png} 
-	}
-	\subfigure[朗道阻尼项]{
-		\includegraphics[width=0.2\textwidth]{../psi-code/f2d/test_ld.png} 
-	}
-	\caption{计算变量对比}
-\end{figure}
+\end{enumerate}
 
 
-
+%\section{三场圆截面}
+%实际上径向坐标用归一化小半径代替，以下为一些参数设置
+%\begin{itemize}
+%	\item 环向磁场，$ g = -B_0R_0 $，环向磁场沿着$-\nabla\phi$用来和原始的$(r,\theta,\zeta)$进行对比。
+%	\item 极向磁场，$ \Psi = \int{ rB_0/q_{tmp} dr}, \Psi' = arB_0/q_{tmp} $ ，沿着$\theta$正方向。
+%	\item 度量分量，$ R_\psi = a\cos\theta $, $ R_\theta = -ar\sin\theta $, $ Z_\psi = a\sin\theta $, $ Z_\theta = ar\sin\theta $
+%	\item 雅克比， $ J = R( R_\theta Z_\psi-R_\psi Z_\theta ) $
+%	\item $q_{local}$， $ q(\psi,\theta) = -\frac{gJ}{R^2 \Psi} $
+%	\item $q_{global}$， $ q_{global} = -\frac{1}{2\pi}\frac{g}{\Psi'}\int_{0}^{2\pi}\frac{J}{R^2}d\theta $, $q_{local}$的极向平均，左手系下和$q_{tmp}$相反
+%\end{itemize}
+%
+%小柱坐标系下圆截面相当于磁面坐标下equal arc length的情况，这时$q_{local}$并不只是$\psi$的函数，小柱坐标系下进行了近似。
+%
+%\begin{figure}[H]
+%	\centering
+%	\subfigure[$J$]{
+%		\includegraphics[width=0.2\textwidth]{../psi-code/f2d/jacob.png} 
+%	}
+%	\subfigure[$q_{local}$]{
+%		\includegraphics[width=0.2\textwidth]{../psi-code/f2d/q_local.png}
+%	}
+%	\subfigure[对流项系数$\sim 1/r$]{
+%		\includegraphics[width=0.2\textwidth]{../psi-code/f2d/coef_con_a.png} 
+%	}
+%	\subfigure[曲率项系数]{
+%		\includegraphics[width=0.2\textwidth]{../psi-code/f2d/coef_cur_a.png} 
+%	}
+%	\caption{平衡常量对比}
+%\end{figure}
+%
+%以下是相同矩阵的各种项的解，计算的差异主要来自于平行算符归一化时候出现的环径比因子，这个因子在小柱坐标系中是近似而来的，这里全部的微分算符采用二阶精度
+%\begin{figure}[H]
+%	\centering
+%	\subfigure[泊松方程的解]{
+%		\includegraphics[width=0.2\textwidth]{../psi-code/f2d/test_poisson.png} 
+%	}
+%	\subfigure[曲率项]{
+%		\includegraphics[width=0.2\textwidth]{../psi-code/f2d/test_cur.png}
+%	}
+%	\subfigure[平行微分项]{
+%		\includegraphics[width=0.2\textwidth]{../psi-code/f2d/test_gradp.png} 
+%	}
+%	\subfigure[朗道阻尼项]{
+%		\includegraphics[width=0.2\textwidth]{../psi-code/f2d/test_ld.png} 
+%	}
+%	\caption{计算变量对比}
+%\end{figure}
+%
+%
+%下边主要对比n=10的扰动，平行微分算符有两种表示，分别用$global$和$local$来标记\\
+%$(r,\theta,\zeta)$下：
+%$$ local: \nabla_{\parallel}{f} = \frac{a}{R}( -f_{\theta}/q_{local}+f_\phi ) $$
+%$$ global: \nabla_{\parallel}{f} = \frac{a}{R}(-f_{\theta}/q_{global}+f_\phi ) $$
+%这里的$q_{local},q_{global}$均为之前平衡设定下的数值，所以取了相反数
+%
+%$(\psi,\theta,\phi)$下:
+%$$ local: \nabla_{\parallel}{f} = -a\frac{\Psi'}{JB_0}( f_{\theta}+q_{local}f_\phi ) $$
+%$$ global: \nabla_{\parallel}{f} = \frac{a}{R}(-f_{\theta}/q_{global}+f_\phi ) $$
+%实际上两套坐标系下的表达是一样的。
+%
+%以下是增长率的对比,实线是小柱坐标，虚线是磁面坐标，两者的差异其实不大，算符基本比较过，可能有一些小的数值没有注意到，这个不是大问题,local的增长率应该取100时刻以后的，之前的模式应该是由于初始扰动的问题。
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=0.35\textwidth]{../psi-code/f2d/E_global_local.png}
+%	\caption{}
+%\end{figure}
+%
+%
+%\begin{figure}[H]
+%	\centering
+%	\subfigure[小柱global]{
+%		\includegraphics[width=0.2\textwidth]{../psi-code/f2d/test_02_global.png} 
+%	}
+%	\subfigure[磁面global]{
+%		\includegraphics[width=0.2\textwidth]{../psi-code/f2d/test_01_global.png}
+%	}
+%	\subfigure[小柱local]{
+%		\includegraphics[width=0.2\textwidth]{../psi-code/f2d/test_02_local.png} 
+%	}
+%	\subfigure[磁面local]{
+%		\includegraphics[width=0.2\textwidth]{../psi-code/f2d/test_01_local.png} 
+%	}
+%	\caption{平衡常量对比}
+%\end{figure}
+%
+%local和global的平行微分算符下增长率有些差别，但是至少说明程序在磁面坐标退化到小柱坐标下的结果应该是合理的。
 
 \end{document}
