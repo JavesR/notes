@@ -1,0 +1,104 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage{xeCJK}
+\usepackage{geometry}
+\geometry{left=2.0cm,right=2.0cm,top=2.0cm,bottom=2.0cm}
+
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{lmodern}
+\usepackage{listings}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{
+	basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+	breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+	breaklines=false,                 % sets automatic line breaking
+	captionpos=b,                    % sets the caption-position to bottom
+	commentstyle=\color{mygreen},    % comment style
+	extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+	keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+	keywordstyle=\color{blue},       % keyword style
+	language=[95]Fortran,                 % the language of the code
+	numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+	numbersep=5pt,                   % how far the line-numbers are from the code
+	numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+	rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+	showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+	showstringspaces=false,          % underline spaces within strings only
+	showtabs=false,                  % show tabs within strings adding particular underscores
+	stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+	stringstyle=\color{mymauve},     % string literal style
+	tabsize=4,                       % sets default tabsize to 2 spaces
+	title=\lstname                   % show the filename of files
+}
+
+
+\title{Task/Eq的介绍和使用}
+\author{任广智}
+\date{\today}
+
+\begin{document}
+	
+	\maketitle
+	
+	\section{定义}
+	\subsection{坐标系}
+	
+	\begin{enumerate}
+		\item 柱坐标系 $(R,\phi,Z)$
+		\item 环坐标系 $(r,\theta,\zeta)$
+			$$\zeta = -\phi, \nabla\zeta = -\frac{1}{R}\pmb{e_\phi}$$
+	\end{enumerate}
+	
+	\subsection{微分方程}
+	$$ \nabla\times(\nabla\zeta\times\nabla{f})=[R^2\nabla\cdot(\frac{1}{R^2}\nabla{f})]\nabla\zeta $$
+	$$  $$
+	
+	\subsection{平衡磁场}
+	$$ \pmb{B}=\frac{1}{2\pi}[I_\theta\nabla\zeta+\nabla\zeta\times\psi_\theta] $$
+	$$ \pmb{j}=\frac{1}{\mu_0}\nabla\times\pmb{B}, \pmb{j}=\frac{1}{2\pi\mu_0}[R^2\nabla\cdot\frac{1}{R^2}\nabla\psi_\theta\nabla\zeta-\nabla\zeta\times\nabla{I_\theta}] $$
+	
+	\subsection{磁面平均}
+	
+	\subsection{环向磁通和环向电流}
+	
+	\subsection{磁面函数}
+	
+	
+	\subsection{Grad-Shafranov 方程}
+	根据磁流体力学平衡$\pmb{j}\times\pmb{B}=\nabla{P}$，我们可以通过
+	$$  
+	\begin{aligned}
+	\pmb{j}\times\pmb{B}
+	&=\frac{1}{4\pi^2\mu_0}[R^2\nabla\cdot\frac{1}{R^2}\nabla\psi_\theta+I_\theta\frac{dI_\theta}{d\psi_\theta}]\nabla\zeta\times(\nabla\zeta\times(\nabla\zeta\times\nabla\psi_\theta))\\
+	&=-\frac{1}{4\pi^2\mu_0}[\nabla\cdot\frac{1}{R^2}\nabla\psi_\theta+\frac{I_\theta}{R^2}\frac{dI_\theta}{d\psi_\theta}]\nabla\psi_\theta
+	\end{aligned}
+	$$
+	
+	$$
+	\nabla{P}=\frac{dP}{d\psi_\theta}\nabla{\psi_\theta}
+	$$
+	得到
+	$$
+	\nabla\cdot\frac{1}{R^2}\nabla\psi_\theta=-4\pi^2\mu_0\frac{dP}{d\psi_\theta}-\frac{I_\theta}{R^2}\frac{dI_\theta}{d\psi_\theta}
+	$$
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document}
