@@ -1,0 +1,91 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage{xeCJK}
+\usepackage{geometry}
+\geometry{left=2.0cm,right=2.0cm,top=2.0cm,bottom=2.0cm}
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{lmodern}
+\usepackage{listings}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{
+	basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+	breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+	breaklines=false,                 % sets automatic line breaking
+	captionpos=b,                    % sets the caption-position to bottom
+	commentstyle=\color{mygreen},    % comment style
+	extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+	keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+	keywordstyle=\color{blue},       % keyword style
+	language=[95]Fortran,                 % the language of the code
+	numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+	numbersep=5pt,                   % how far the line-numbers are from the code
+	numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+	rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+	showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+	showstringspaces=false,          % underline spaces within strings only
+	showtabs=false,                  % show tabs within strings adding particular underscores
+	stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+	stringstyle=\color{mymauve},     % string literal style
+	tabsize=4,                       % sets default tabsize to 2 spaces
+	title=\lstname                   % show the filename of files
+}
+
+
+\title{references on finite beta}
+\author{Ren-Guangzhi}
+\date{\today}
+
+
+\begin{document}
+	
+\maketitle
+\tableofcontents
+
+\newpage
+
+\section{Global gyrokinetic simulation of turbulence driven by kinetic ballooning mode}	
+	\begin{itemize}
+		\item A. Ishizawa, K. Imadera, Y. Nakamura, and Y. Kishimoto
+		\item \href{https://aip.scitation.org/doi/10.1063/1.5100308}{Phys. Plasmas 26, 082301 (2019)} 
+		\item GKNET
+		\item A saturation of KBM and a quasisteady state of KBM turbulence is presented. In the quasisteady state, strong zonal flows and low toroidal
+		modes, which are stable against KBM, dominate the fluctuations of
+		turbulence.
+		\item saturation mechanism of the KBM
+		\begin{enumerate}
+			\item zonal flow shear( when the zonal flow shearing rate is similar to the linear growth rate of ITG/KBM instability )
+			\item other zonal modes such as the zonal magnetic field and zonal pressure
+			\item the nonlinear energy transfer from the KBM to the low n modes
+			
+		\end{enumerate}
+
+	\item extract 
+	
+	The ITG mode produces strong zonal flows, which regulate the nonlinear saturation level of ITG turbulence at low $\beta$, whereas it is hard to get a saturation of the growth of KBMs in gyrokinetic simulations because of weak zonal flows[2-4]. We observe the growth of fluctuations without saturation, for instance, above $\beta_i \approx 0.6\%$ for the Cyclone base case (CBC) parameters except for some cases with an artificially reduced pressure gradient[4,8,9]. This is called the run-away/nonzonal transi-
+	tion,[10-12] and it takes place at high $\beta$ in gyrokinetic simulations using the local flux tube geometry. 
+	
+	In these local simulations, the production of zonal flows is the main mechanism of the saturation of drift-wave instabilities, and the run-away/nonzonal transition is considered to be linked to weak zonal flows due to stochastic magnetic fields. The magnetic stochasticity is produced by magnetic reconnection, leading to the violation of magnetic surfaces. Magnetic reconnection can be caused by drift-wave instabilities at finite $\beta$ because magnetic perturbations due to the instabilities become prominent. 
+	
+	This process of the violation of magnetic surfaces is explained in terms of parity. The ITG mode and KBM belong to the twisting/ballooning parity mode, which does not cause magnetic reconnection and retains its parity during its linear growth phase because it satisfies the linearized gyrokinetic equation. On the other hand, twisting parity modes do not satisfy the nonlinear gyrokinetic equation[13], and thus, when a twisting parity mode evolves into the nonlinear regime, i.e., its amplitude becomes finite, the free energy of the instability should be transferred to tearing parity modes through nonlinear interactions, which is called the nonlinear parity mixture. The produced tearing parity modes cause the magnetic stochasticity and influence the amplitude of ITG turbulence at finite $\beta$.[14] Thus, the electromagnetic drift-wave instabilities have a channel of energy transfer to tearing parity modes, which can influence the amplitude of turbulence, in addition to the production of zonal flows.
+	
+	\end{itemize}
+
+\newpage
+
+\section{}
+
+
+
+
+
+\end{document}
