@@ -90,9 +90,226 @@
 	\nabla\cdot\frac{1}{R^2}\nabla\psi_\theta=-4\pi^2\mu_0\frac{dP}{d\psi_\theta}-\frac{I_\theta}{R^2}\frac{dI_\theta}{d\psi_\theta}
 	$$
 	
+
+	\section{运行}
+
+
+	
+	\section{输出}
+	
+	\begin{lstlisting}
+    integer fileUnit,NRG,NZG,NPS,NSG,NTG,NRV
+	
+	real(kind=8) RR,BB,RIP
+	! RR    : Plasma major radius
+	! BB    : Magnetic field at center
+	! RIP   : Plasma current
+	integer NRGMAX,NZGMAX
+	! NRGMAX: Number of horizontal mesh points in R-Z plane
+	! NZGMAX: Number of vertical mesh points in R-Z plane
+	real(kind=8),dimension(:),allocatable :: RG,ZG
+	real(kind=8),dimension(:,:),allocatable :: PSIRZ
+	
+	integer NPSMAX
+	! NPSMAX: Number of flux surfaces
+	real(kind=8),dimension(:),allocatable :: PSIPS,PPPS,TTPS,TEPS,OMPS
+	
+	integer NSGMAX,NTGMAX,NUGMAX,NRMAX,NTHMAX,NSUMAX,NRVMAX,NTVMAX
+	! NSGMAX: Number of radial mesh points for Grad-Shafranov eq.
+	! NTGMAX: Number of poloidal mesh points for Grad-Shafranov eq.
+	! NUGMAX: Number of radial mesh points for flux-average quantities
+	! NPSMAX: Number of flux surfaces
+	! NRMAX : Number of radial mesh points for flux coordinates
+	! NTHMAX: Number of poloidal mesh points for flux coordinates
+	! NSUMAX: Number of boundary points
+	! NRVMAX: Number of radial mesh of surface average
+	! NTVMAX: Number of poloidal mesh for surface average
+	real(kind=8),dimension(:,:),allocatable :: PSI,DELPSI,HJT
+	real(kind=8),dimension(:),allocatable :: PSIPNV,PSIPV,PSITV,QPV,TTV
+	real(kind=8) RAXIS,ZAXIS,PSITA,PSIPA,PSI0
 	
 	
+	real(kind=8) RA,RKAP,RDLT,RB,FRBIN
+	! RA    : Plasma minor radius
+	! RKAP  : Plasma shape elongation
+	! RDLT  : Plasma shape triangularity
+	! RB    : Wall minor radius
+	! FRBIN : (RB_inside-RA)/(RB_outside-RA)
 	
+	real(kind=8) PJ0,PJ1,PJ2,PROFJ0,PROFJ1,PROFJ2
+	! PJ0   : Current density at R=RR (main component) : Fixed to 1
+	! PJ1   : Current density at R=RR (sub component)       (arb)
+	! PJ2   : Current density at R=RR (sub component)       (arb)
+	! PROFJ0: Current density profile parameter
+	! PROFJ1: Current density profile parameter
+	! PROFJ2: Current density profile parameter
+	
+	real(kind=8) PP0,PP1,PP2,PROFP0,PROFP1,PROFP2
+	! PP0   : Plasma pressure (main component)              (MPa)
+	! PP1   : Plasma pressure (sub component)               (MPa)
+	! PP2   : Plasma pressure (increment within ITB)        (MPa)
+	! PROFP0: Pressure profile parameter
+	! PROFP1: Pressure profile parameter
+	! PROFP2: Pressure profile parameter
+	
+	real(kind=8) PT0,PT1,PT2,PROFT0,PROFT1,PROFT2
+	! PT0   : Plasma temperature (main component)           (keV)
+	! PT1   : Plasma temperature (sub component)            (keV)
+	! PT2   : Plasma temperature (increment within ITB)     (keV)
+	! PTSEQ : Plasma temperature (at surface)               (keV)
+	! PROFTP0: Temperature profile parameter
+	! PROFTP1: Temperature profile parameter
+	! PROFTP2: Temperature profile parameter    
+	
+	real(kind=8) PV0,PV1,PV2,PROFV0,PROFV1,PROFV2
+	! PV0   : Toroidal rotation (main component)              (m/s)
+	! PV1   : Toroidal rotation (sub component)               (m/s)
+	! PV2   : Toroidal rotation (increment within ITB)        (m/s)
+	! PROFV0: Velocity profile parameter
+	! PROFV1: Velocity profile parameter
+	! PROFV2: Velocity profile parameter
+	
+	real(kind=8) PROFR0,PROFR1,PROFR2
+	! PROFR0: Profile parameter
+	! PROFR1: Profile parameter
+	! PROFR2: Profile parameter
+	
+	real(kind=8),dimension(:,:),allocatable :: HJTRZ
+	
+	open(Newunit=fileUnit, file="data_test", form='unformatted')
+	
+	read(fileUnit) RR,BB,RIP
+	read(fileUnit) NRGMAX,NZGMAX
+	
+	allocate( RG(NRGMAX), ZG(NZGMAX) )
+	allocate( PSIRZ(NRGMAX,NZGMAX) )
+	
+	read(fileUnit) (RG(NRG),NRG=1,NRGMAX)
+	read(fileUnit) (ZG(NZG),NZG=1,NZGMAX)
+	read(fileUnit) ((PSIRZ(NRG,NZG),NRG=1,NRGMAX),NZG=1,NZGMAX)
+	
+	read(fileUnit) NPSMAX
+	
+	allocate( PSIPS(NPSMAX), PPPS(NPSMAX), TTPS(NPSMAX), TEPS(NPSMAX), OMPS(NPSMAX) )
+	
+	read(fileUnit) (PSIPS(NPS),NPS=1,NPSMAX)
+	read(fileUnit) (PPPS(NPS),NPS=1,NPSMAX)
+	read(fileUnit) (TTPS(NPS),NPS=1,NPSMAX)
+	read(fileUnit) (TEPS(NPS),NPS=1,NPSMAX)
+	read(fileUnit) (OMPS(NPS),NPS=1,NPSMAX)
+	
+	read(fileUnit) NSGMAX,NTGMAX,NUGMAX,NRMAX,NTHMAX,NSUMAX,NRVMAX,NTVMAX
+	
+	allocate( PSI(NSGMAX,NTGMAX),DELPSI(NSGMAX,NTGMAX),HJT(NSGMAX,NTGMAX) )
+	
+	read(fileUnit) ((PSI(NSG,NTG),NSG=1,NSGMAX),NTG=1,NTGMAX)
+	read(fileUnit) ((DELPSI(NSG,NTG),NSG=1,NSGMAX),NTG=1,NTGMAX)
+	read(fileUnit) ((HJT(NSG,NTG),NSG=1,NSGMAX),NTG=1,NTGMAX)
+	
+	read(fileUnit) RAXIS,ZAXIS,PSITA,PSIPA,PSI0
+	
+	allocate( PSIPNV(NRVMAX),PSIPV(NRVMAX),PSITV(NRVMAX),QPV(NRVMAX),TTV(NRVMAX) )
+	read(fileUnit) (PSIPNV(NRV),NRV=1,NRVMAX)
+	read(fileUnit) (PSIPV(NRV),NRV=1,NRVMAX)
+	read(fileUnit) (PSITV(NRV),NRV=1,NRVMAX)
+	read(fileUnit) (QPV(NRV),NRV=1,NRVMAX)
+	read(fileUnit) (TTV(NRV),NRV=1,NRVMAX)
+	
+	read(fileUnit) RA,RKAP,RDLT,RB,FRBIN
+	read(fileUnit) PJ0,PJ1,PJ2,PROFJ0,PROFJ1,PROFJ2
+	read(fileUnit) PP0,PP1,PP2,PROFP0,PROFP1,PROFP2
+	read(fileUnit) PT0,PT1,PT2,PROFT0,PROFT1,PROFT2
+	read(fileUnit) PV0,PV1,PV2,PROFV0,PROFV1,PROFV2
+	read(fileUnit) PROFR0,PROFR1,PROFR2
+	
+	allocate(HJTRZ(NRGMAX,NZGMAX))
+	
+	read(fileUnit) ((HJTRZ(NRG,NZG),NRG=1,NRGMAX),NZG=1,NZGMAX)
+	
+	close(fileUnit)
+	\end{lstlisting}
+	
+	
+\section{EQMESH}
+	$(\sigma,\theta)$网格的划分
+	\begin{itemize}
+		\item{NSGMAX}: $\sigma$径向网格数, $N_\sigma$ 
+		\item{NTGMAX}: $\theta$极向网格数, $N_\sigma$
+		\item DSG: $\Delta{\sigma}$, DTG: $\Delta{\theta}$  
+		\item SIGM(1:NSGMAX): $\sigma_{i+1/2}$
+		\item SIGG(1:NSGMAX+1): $\sigma_i$
+		\item THGM(1:NTGMAX): $\theta_{i+1/2}$
+		\item THGG(1:NTGMAX+1): $\theta_i$
+	\end{itemize}
+	
+	
+\section{EQPSIN}
+	初始分布
+	\begin{itemize}
+		\item{RAXIS=RR}:  $R_{axis} = R_0$
+		\item{ZAXIS=0}: $Z_{axis} = 0$
+	
+	\item 	(MDLEQF=4,9)
+			$$\psi_{\zeta{a}}=\pi\kappa{a^2}B_0$$
+			$$\psi_{\theta{a}}=2\psi_{\zeta{a}}/q_a$$
+			$$\psi_0 = -\psi_{\theta{a}}$$
+			(MDLEQF=0-3,5-8)
+			$$ ... $$
+			
+	\begin{lstlisting}
+   	IF(MOD(MDLEQF,5).EQ.4) THEN
+		PSITA=PI*RKAP*RA**2*BB
+		PSIPA=PSITA*2/QA
+		PSI0=-PSIPA
+	ELSE
+		PSI0=-0.5D0*RMU0*RIP*1.D6*RR
+		PSIPA=-PSI0
+		PSITA=PI*RKAP*RA**2*BB
+	ENDIF
+	\end{lstlisting}
+	
+	\item NRVMAX: 磁面数 
+		$$ \hat{\psi_\theta(\rho)} = \rho^2 $$
+		$$ \psi_\theta(\rho) = \psi_{\theta{a}}\rho^2 $$
+		$$ \psi_\zeta(\rho) = \psi_{\zeta{a}}\rho^2 $$
+		$$ q(\rho) = \psi_{\zeta{a}}/\psi_{\theta{a}} $$
+		$$ I_\theta(\rho) = 2\pi R_0 B_0 $$
+	\begin{lstlisting}
+	 	DRHO=1.D0/(NRVMAX-1)
+		DO NRV=1,NRVMAX
+			RHOL=(NRV-1)*DRHO
+			PSIPNV(NRV)=RHOL*RHOL
+			PSIPV(NRV)=PSIPA*RHOL*RHOL
+			PSITV(NRV)=PSITA*RHOL*RHOL
+			QPV(NRV)=PSITA/PSIPA
+			TTV(NRV)=2.D0*PI*RR*BB
+		ENDDO
+	\end{lstlisting}
+		
+		$$ \psi(\sigma,\theta)=\psi_0(1-\sigma^2) $$
+		$$ \delta\psi(\sigma,\theta)=0 $$	
+	\begin{lstlisting}
+		DO NSG=1,NSGMAX
+			DO NTG=1,NTGMAX
+				PSI(NTG,NSG)=PSI0*(1.D0-SIGM(NSG)*SIGM(NSG))
+				DELPSI(NTG,NSG)=0.D0
+				HJT(NTG,NSG)=0.D0
+			ENDDO
+		ENDDO
+	\end{lstlisting}
+	
+	\end{itemize}
+	
+
+\section{EQDEFB}
+	\begin{itemize}
+		\item RHOM(1:NTGMAX)： $\rho(\theta_{j+1/2})$
+		\item RHOG(1:NTGMAX+1): $\rho(\theta_{j})$
+		\item RMG(1:NSGMAX,1;NTGMAX+1): $R_{i+1/2,j}$
+		\item RGM(1:NSGMAX+1,1;NTGMAX): $R_{i,j+1/2}$
+		\item RMM(1:NSGMAX,1;NTGMAX): 	$R_{i+1/2,j+1/2}$
+		\item ZMM(1:NSGMAX,1;NTGMAX):   $Z_{i+1/2,j+1/2}$
+	\end{itemize}	
 	
 	
 	

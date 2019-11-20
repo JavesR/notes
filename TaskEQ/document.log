@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.7.6)  24 OCT 2019 10:08
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.7.6)  6 NOV 2019 10:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1071,14 +1071,30 @@ LaTeX Font Info:    External font `lmex10' loaded for size
  [1
 
 ]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 108.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 108.
+ [2]
+[3]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 236.
+
+ (/home/jr/software/texlive/texmf-dist/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 236.
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 261.
+ [4] [5]
 (./document.aux) ) 
 Here is how much of TeX's memory you used:
- 15548 strings out of 492970
- 333896 string characters out of 6133099
- 460038 words of memory out of 5000000
- 19435 multiletter control sequences out of 15000+600000
- 564624 words of font info for 59 fonts, out of 8000000 for 9000
+ 15948 strings out of 492970
+ 338905 string characters out of 6133099
+ 518038 words of memory out of 5000000
+ 19822 multiletter control sequences out of 15000+600000
+ 578622 words of font info for 71 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 42i,10n,64p,10436b,247s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,10n,64p,10436b,1776s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on document.pdf (1 page).
+Output written on document.pdf (5 pages).
