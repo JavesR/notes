@@ -19,7 +19,7 @@
 \section{model equation}
 
 \begin{equation}
- 	\frac{dn}{dt}=a\frac{dn_{eq}}{dr}-n_{eq}\nabla_{\parallel}v+\nabla_{\parallel}j+\omega_d(n_{eq}\phi-p_e)+D_n\nabla^2_\perp{n}
+ 	\frac{dn}{dt}=a\frac{dn_{eq}}{dr}\nabla_\theta\phi-n_{eq}\nabla_{\parallel}v+\nabla_{\parallel}j+\omega_d(n_{eq}\phi-p_e)+D_n\nabla^2_\perp{n}
 \end{equation}
 
 \begin{equation}
@@ -35,14 +35,126 @@
 \end{equation}
 
 \begin{equation}
-\frac{dT_i}{dt}=...
+\frac{dT_i}{dt}=a\frac{\partial{T_{eq}}}{\partial{r}}\nabla_\theta\phi-(\Gamma-1)T_{eq}\nabla_\parallel{v}+T_{eq}\omega_d((\Gamma-1)\phi+(2\Gamma-1)T_i+(\Gamma-1)\frac{T_{eq}}{n_{eq}}n)-(\Gamma-1)\sqrt{\frac{8T_{eq}}{\pi}}|\nabla_\parallel|T_i+D_T\nabla_\perp^2{T_i}
 \end{equation}
 
 
 \section{energy balance equation}
 
+energy in system
+\begin{equation}
+\begin{aligned}
+	&E_k=\frac{1}{2}<|\nabla_\perp\phi|^2>	\\
+	&E_m=\frac{1}{2}<\frac{\beta}{n_{eq}}|\nabla_\perp\psi|^2>	\\
+	&E_n=\frac{1}{2}<\tau\frac{T_{eq}}{n_{eq}^2}|n|^2>	\\
+	&E_v=\frac{1}{2}<{\frac{\tau}{\tau+1}}|v|^2>	\\
+	&E_t=\frac{1}{2}<{\frac{\tau}{(\Gamma-1)(\tau+1)T_{eq}}}|T|^2>
+\end{aligned}
+\end{equation}
+where 
+\begin{equation}
+<f>=\frac{\int{f}dV}{\int{dV}}
+=\frac{\int{f}\ rdrd\theta{d\zeta}}{\int\ rdrd\theta{d\zeta}}
+\end{equation}
+total energy
+\begin{equation}
+	E_{total}={E_k+E_m+E_n+E_v+E_t} 
+\end{equation}
+time dependence of energy
+\begin{equation}
+\frac{d}{dt}E_i=\Gamma_F+\Gamma_Q+\Gamma_C+\Gamma_{LD}+\Gamma_{NL}+\Gamma_{S}
+\end{equation}
+
+
+radial transport items
+\begin{equation}
+\begin{aligned}
+	&\Gamma_{Q,n}=<\tau{a}\frac{T_{eq}}{n_{eq}^2}n\nabla_\theta\phi>+<\beta\tau\frac{T_{eq}}{n_{eq}^2}\frac{\partial{j_0}}{\partial{r}}n\nabla_\theta{A}>	\\
+	&\Gamma_{Q,v}=-<\frac{\tau}{\tau+1}\beta{aT_{eq}}(\frac{2}{n_{eq}}\frac{dn_{eq}}{dr}+\frac{1}{T_{eq}}\frac{dT_{eq}}{dr})v\nabla_\theta{A}>	\\
+	&\Gamma_{Q,t}=<{\frac{\tau}{(\Gamma-1)(\tau+1)T_{eq}}}a\frac{\partial{T_{eq}}}{\partial{r}}T\nabla_\theta\phi>	\\
+	&\Gamma_{Q,k}=<-aT_{eq}(\frac{1}{n}\frac{dn_{eq}}{dr}+\frac{1}{T_{eq}}\frac{dT_{eq}}{dr})\phi\nabla_\theta\nabla^2_\perp\phi>+<\frac{\beta}{n_{eq}}\frac{\partial{j_0}}{\partial{r}}\phi\nabla_\theta{A}>	\\
+	&\Gamma_{Q,m}=<\frac{\beta}{n_{eq}}{aT_{eq}}\frac{1}{n_{eq}}\frac{dn_{eq}}{dr}j\nabla_\theta{A}>
+\end{aligned}
+\end{equation}
+
+parallel transport items
+\begin{equation}
+\begin{aligned}
+&\Gamma_{F,k}=<>
+\end{aligned}
+\end{equation}
+
+curvature items
+\begin{equation}
+\begin{aligned}
+&\Gamma_{C,k}=<>
+\end{aligned}
+\end{equation}
+
+landau damping items
+\begin{equation}
+\begin{aligned}
+&D_m=<\frac{1}{n_{eq}}\sqrt{\frac{\pi\tau}{2}\frac{m_e}{m_i}}j\nabla_\parallel|(v-\frac{j}{n_{eq}})> \\
+&D_t=-<\frac{\tau}{(\tau+1)T_{eq}}\sqrt{\frac{8T_{eq}}{\pi}}T|\nabla_\parallel|T>
+\end{aligned}
+\end{equation}
+
+diffusion items
+\begin{equation}
+\begin{aligned}
+	&\Gamma_{S,k}=-D_U<|\nabla^2_\perp\phi|^2>	\\
+	&\Gamma_{S,m}=-\frac{1}{n_{eq}}D_m<|j|^2>	\\
+	&\Gamma_{S,n}=\tau\frac{T_{eq}}{n_{eq}^2}D_n<|\nabla_\perp{n}|^2>	\\
+	&\Gamma_{S,v}=-\frac{\tau}{\tau+1}D_v<|\nabla_\perp{v}|^2>	\\
+	&\Gamma_{S,t}=-\frac{\tau}{(\Gamma-1)(\tau+1)T_{eq}}D_t<|\nabla_\perp{T}|^2>
+\end{aligned}
+\end{equation}
+
+time dependence of energy
+\begin{equation}
+\frac{\partial}{\partial{t}}E_{total}=\Sigma_i[ {\frac{1}{2}({\Gamma_{Q,i}}+{\Gamma_{C,i}}+{\Gamma_{LD,i}})} +\Gamma_{S,i}]
+\end{equation}
+
+
+\section{turbulence}
+\begin{figure}[H]
+	\centering
+	\subfigure[]{
+		\includegraphics[width=0.45\textwidth]{./images/tur_n_b01_40-80.png} 
+	}
+	\subfigure[]{
+		\includegraphics[width=0.45\textwidth]{./images/tur_n_b01_40-80.png}
+	}
+	\caption{(a),(b)}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\subfigure[]{
+		\includegraphics[width=0.45\textwidth]{./images/tur_n_b01_200-250.png} 
+	}
+	\subfigure[]{
+		\includegraphics[width=0.45\textwidth]{./images/tur_n_b10_150-250.png}
+	}
+	\caption{(a),(b)}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\subfigure[]{
+		\includegraphics[width=0.45\textwidth]{./images/tur_t_b01.png} 
+	}
+	\subfigure[]{
+		\includegraphics[width=0.45\textwidth]{./images/tur_t_b10.png}
+	}
+	\caption{(a),(b)}
+\end{figure}
+
 
 \section{zonal flow character}
+
 	\begin{figure}[H]
 		\centering
 		\subfigure[]{
@@ -54,9 +166,86 @@
 		\caption{(a)zonal flow as a function of radius and time,(b)$E_{k,ZF}/E_{k,all}$as a function of radius and time}
 	\end{figure}
 
+
+
+
 \section{energy drive of $E_{k,m=0,n=0}$ and $E_{p,m=1,n=0}$}
 
+for zonal flow energy:
+\begin{equation}
+\frac{\partial}{\partial{t}}E_k=\Gamma_{NLk,k}+\Gamma_{NLm,k}+\Gamma_{C,k}
+\end{equation}
+for pressure:
+\begin{equation}
+	p=p_i+p_e=n_0T+(1+\tau)T_0{n}
+\end{equation}
 
+\begin{equation}
+\frac{\partial}{\partial{t}}E_p=\Gamma_{Q,p}+\Gamma_{F,p}+\Gamma_{C,p}+\Gamma_{LD,p}+\Gamma_{NL,p}+\Gamma_{S,p}
+\end{equation}
+
+\begin{equation}
+\begin{aligned}
+&\Gamma_{Q,p}=<a[(1+\tau)T_{eq}\frac{\partial{n_eq}}{\partial{r}}+n_{eq}\frac{\partial{T_{eq}}}{\partial{r}}]p\nabla_\theta\phi>+<(1+\tau)\beta{T_{eq}}\frac{\partial{j_0}}{\partial{r}}p\nabla_\theta{A}>	\\
+&\Gamma_{F,p}=-<(\Gamma+\tau)n_{eq}T_{eq}p\nabla_{\parallel}v>+<(1+\tau)T_{eq}p\nabla_\parallel{j}>	\\
+&\Gamma_{LD,p}=-<(\Gamma-1)\sqrt{\frac{8T_{eq}}{\pi}}n_{eq}p|\nabla_\parallel|T>	\\
+&\Gamma_{C,p}= <p\omega_d((\Gamma+\tau)n_{eq}T_{eq}\phi)>+<p\omega_d((2\Gamma-1)n_{eq}T_{eq}T)>+<p\omega_d(((\Gamma-1)-\tau(\tau+1))T_{eq}^2n)>	\\
+&\Gamma_{NL,p}=	-<p((1+\tau)T_{eq}[\phi,n]+n_{eq}[\phi,T])>
+	+<p(\Gamma+\tau)n_{eq}T_{eq}\beta[A,v]>
+	-<p(1+\tau)T_{eq}\beta[A,j]>	\\
+&\Gamma_{S,p}=	<p[(1+\tau)T_{eq}D_n\nabla_\perp^2n+n_{eq}D_T\nabla_\perp^2{T} ]>	\\
+\end{aligned}
+\end{equation}
+
+
+\subsection{case of $\beta=0.1\%$}
+
+\begin{figure}[H]
+	\centering
+	\subfigure[]{
+		\includegraphics[width=0.35\textwidth]{./images/zf_b01-02-04.png} 
+	}
+	\subfigure[]{
+		\includegraphics[width=0.35\textwidth]{./images/zf_b01-05-08.png}
+	}
+	\caption{(a),(b)}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\subfigure[]{
+		\includegraphics[width=0.35\textwidth]{./images/p10_b01_02-04.png} 
+	}
+	\subfigure[]{
+		\includegraphics[width=0.35\textwidth]{./images/p10_b01_05-08.png}
+	}
+	\caption{(a),(b)}
+\end{figure}
+
+
+\subsection{case of $\beta=1.0\%$}
+
+\begin{figure}[H]
+	\centering
+	\subfigure[]{
+		\includegraphics[width=0.35\textwidth]{./images/zf_b10-02-04.png} 
+	}
+	\subfigure[]{
+		\includegraphics[width=0.35\textwidth]{./images/zf_b10-05-08.png}
+	}
+	\caption{(a),(b)}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\subfigure[]{
+		\includegraphics[width=0.35\textwidth]{./images/p10_b10_02-04.png} 
+	}
+	\subfigure[]{
+		\includegraphics[width=0.35\textwidth]{./images/p10_b10_05-08.png}
+	}
+	\caption{(a),(b)}
+\end{figure}
 
 
 \end{document}
