@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.7.6)  9 DEC 2019 14:06
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.7.6)  17 DEC 2019 16:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1025,37 +1025,49 @@ File: ./images/tur_t_b01.png Graphic file (type bmp)
 <./images/tur_t_b01.png>
 File: ./images/tur_t_b10.png Graphic file (type bmp)
 <./images/tur_t_b10.png>
+File: ./images/Q_tur_b01.png Graphic file (type bmp)
+<./images/Q_tur_b01.png>
+File: ./images/Q_tur_b10.png Graphic file (type bmp)
+<./images/Q_tur_b10.png>
+ [3]
 File: ./images/zf_contour.png Graphic file (type bmp)
 <./images/zf_contour.png>
 File: ./images/zf_ratio.png Graphic file (type bmp)
 <./images/zf_ratio.png>
- [3]
+ [4]
 File: ./images/zf_b01-02-04.png Graphic file (type bmp)
 <./images/zf_b01-02-04.png>
 File: ./images/zf_b01-05-08.png Graphic file (type bmp)
 <./images/zf_b01-05-08.png>
- [4]
 File: ./images/p10_b01_02-04.png Graphic file (type bmp)
 <./images/p10_b01_02-04.png>
 File: ./images/p10_b01_05-08.png Graphic file (type bmp)
 <./images/p10_b01_05-08.png>
+File: ./images/pnl_b01_02-04.png Graphic file (type bmp)
+<./images/pnl_b01_02-04.png>
+File: ./images/pnl_b01_05-08.png Graphic file (type bmp)
+<./images/pnl_b01_05-08.png>
+ [5]
 File: ./images/zf_b10-02-04.png Graphic file (type bmp)
 <./images/zf_b10-02-04.png>
 File: ./images/zf_b10-05-08.png Graphic file (type bmp)
 <./images/zf_b10-05-08.png>
- [5]
 File: ./images/p10_b10_02-04.png Graphic file (type bmp)
 <./images/p10_b10_02-04.png>
 File: ./images/p10_b10_05-08.png Graphic file (type bmp)
 <./images/p10_b10_05-08.png>
- [6] (./energy_trans.aux) ) 
+File: ./images/pnl_b10_02-04.png Graphic file (type bmp)
+<./images/pnl_b10_02-04.png>
+File: ./images/pnl_b10_05-08.png Graphic file (type bmp)
+<./images/pnl_b10_05-08.png>
+ [6] [7] (./energy_trans.aux) ) 
 Here is how much of TeX's memory you used:
- 13806 strings out of 492970
- 307633 string characters out of 6133099
+ 13830 strings out of 492970
+ 308249 string characters out of 6133099
  402683 words of memory out of 5000000
- 17717 multiletter control sequences out of 15000+600000
+ 17735 multiletter control sequences out of 15000+600000
  539192 words of font info for 73 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  42i,9n,64p,10440b,251s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on energy_trans.pdf (6 pages).
+Output written on energy_trans.pdf (7 pages).
