@@ -1,0 +1,158 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage{xeCJK}
+\usepackage{geometry}
+\geometry{left=2.0cm,right=2.0cm,top=2.0cm,bottom=2.0cm}
+
+\title{zonal flow/geodesic acoustic mode}
+\author{Guangzhi Ren}
+\date{\today}
+
+\begin{document}
+	
+	\maketitle
+	
+\section{zonal flow}
+
+
+\newpage
+\section{residula flow}	
+
+	\subsection{history}
+	\begin{itemize}
+		\item gyrofluid simulation [Beer,Waltz]: a total collisionless decay of poloidal rotation
+		\item gyrokinetic analysis by [RH 1998]: linear collisionless kinetic mechanisms do not damp the zonal flows completely
+		\item verification by various gyrokinetic codes
+		\item considering shaping effect [Xiao 2006]
+		\item modification of zonal flow closures in gyrofluid model[Mandell,Sugama]
+	\end{itemize}
+	
+	\subsection{description}
+	Considering the polarization drift in plasma, 
+\begin{equation}
+	v_{pj}=\frac{m_j}{e_jB^2}\frac{d\pmb{E}}{dt}
+	\end{equation}
+	this gives rise to the polarization current,
+	\begin{equation}
+	j^{cl}=\sum_{j}{e_jn_j\pmb{v}_{pj}}=\epsilon_0\epsilon^{cl}\frac{d\pmb{E}}{dt}
+	\end{equation}
+	where $\epsilon^{cl}=m_in_i/\epsilon_0B^2=(\omega_{pi}/\Omega_i)^2=(k_{Di}\rho_i)^2>>1$. This polarization current originates from delayed ion gyro motion from time varying electric field and $\epsilon^{cl}$ is called classical polarization, which is a low frenquency dielectric constant perpendicular to the magnetic field.
+
+	And in tokamak, considering the toroidal effect, we should include the traped and passing particals. Some fraction of charged particals($f_t\sim\sqrt{\epsilon},\epsilon=r/R$) are trapped by the magnetic mirror and have a radial excursion by 
+	\begin{equation}
+		\Delta_t=\sqrt{\epsilon}\rho_{pi}=\frac{q\rho_i}{\sqrt{\epsilon}}
+	\end{equation}
+	and as for passing partical the excursion is
+	\begin{equation}
+		\Delta_p=q\rho_i
+	\end{equation}
+	
+	So during this trapped partial orbit motion, we alse have the similar polarization effect if we have radial electric field $E_r$, 
+	\begin{equation}
+		j^{nc}=\epsilon_0\epsilon^{nc}\frac{dE_r}{dt}
+	\end{equation}
+	\begin{equation}
+		\epsilon^{nc}=\sqrt{\epsilon}k_{Di}^2\Delta_t^2=\frac{q^2}{\sqrt{\epsilon}}\epsilon^{cl}
+	\end{equation}
+	and Hinton-Rosenbluth give a expression for the polarization as,
+	\begin{equation}
+		\epsilon=\epsilon^{cl}+\epsilon^{nc}=\frac{\omega_{pi}^2}{\Omega_i^2}(1+\frac{1.6q^2}{\sqrt{\epsilon}})
+	\end{equation}
+	The factor 1.6 comes from detialed kinetic calculation including passing partical contribution.
+	
+	Then we consider the continuity equation of the polarization current,
+	\begin{equation}
+		\frac{\partial\rho_p}{\partial{t}}+\nabla\cdot\pmb{j}_p=S		
+	\end{equation}
+	$S$ is the external source density.Taking the flux surface average and Fourier expansion in space, 
+	\begin{equation}
+		\frac{\partial}{\partial{t}}<\rho_p(\pmb{k})>+<i\pmb{k}_\perp\cdot{\pmb{j}_p}(\pmb{k})>=<S(\pmb{k})>
+	\end{equation}
+	\begin{equation}
+		\epsilon_0\epsilon_p<k_\perp^2>\Phi_k=<\rho_p>-\int<S(\pmb{k})>dt
+	\end{equation}
+	Consider an initial source perturbation $<S(\pmb{k})>=\delta_k(0)\delta(t)$. when the time scale is in a few gyro motion and much shorter than the bounce time of trapped partical.we have,
+	\begin{equation}
+		\epsilon_0\epsilon^{cl}\Phi_k(t=+0)=-e_i\delta{n_k(0)}
+	\end{equation} 
+	when the time scale is longer than the bounce time of trapped particals, the electrostatic potential is further shielded by the addition of the neoclassical polarization, then we have,
+	\begin{equation}
+		\epsilon_0(\epsilon^{cl}+\epsilon^{nc})\Phi_k(t=+\infty)=-e_i\delta{n_k(0)}
+	\end{equation}
+	Therefore, the ratio of the long term zonal flow potential to the initial zonal flow potential is given by, 
+	\begin{equation}
+		\frac{\Phi_k(t=\infty)}{\Phi_k(t=0)}=\frac{\epsilon^{cl}}{\epsilon^{cl}+\epsilon^{nc}}
+	\end{equation}
+	Using the Hinton formula, we have,
+	\begin{equation}
+		\frac{\Phi_k(t=\infty)}{\Phi_k(t=0)}=\frac{1}{1+1.6q^2/\sqrt{\epsilon}}
+	\end{equation}
+		
+	
+	[reference]
+	\begin{enumerate}
+		\item Kikuchi ebook
+		\item Diamond PPCF 2005
+		\item Hinton PRL 1998
+		\item Idomura ... 
+	\end{enumerate}
+	
+	
+\newpage	
+\section{Geodesic acoustic mode}
+\subsection{history}
+	\begin{itemize}
+		\item first prediction by [Winsor 1968]
+		\item Fully forgotten between 1968 and 1996
+		\item dispersion relation, frequency, radial structure and propagation
+		\item close relation to alfven eigen mode
+		\item experimental observations of GAM, H1-heliac,[Shats PRL 2002]; DIII-
+		D, [McKee PoP 2003]
+	\end{itemize}
+	
+\subsection{description}
+	\subsubsection{Winsor1968}
+	The starting equations are the follows:
+	\begin{equation}
+	\begin{aligned}
+		&\rho_0\frac{\partial{\pmb{v}}}{\partial{t}}=\frac{1}{c}\pmb{J}\times\pmb{B}-\nabla{p}	\\
+		&\frac{\partial\rho}{\partial{t}}+\nabla\cdot\rho_0\pmb{v}=0	\\
+		&\nabla\phi=\frac{1}{c}\pmb{b}\times\pmb{B}	\\
+		&\nabla\cdot\pmb{J}=0	\\
+		&\rho_0^{-\gamma}-\gamma{p_0}\rho_0^{-\gamma-1}\frac{\partial{\rho}}{\partial{t}}+\pmb{v}\cdot\nabla({p_0}\rho_0^{-\gamma})=0
+	\end{aligned}
+	\end{equation}	
+	finally, we can deduce the dispersion relation:
+	\begin{equation}
+		\omega^2\int{|\rho|^2}\mathcal{J}dS=\frac{\gamma{p_0}}{\rho_0}
+		( |\int\rho_0\frac{\pmb{B}\times\nabla\psi\cdot\nabla{B^2}}{B^4}\mathcal{J}dS|^2/\int\frac{|\nabla\psi|^2}{B^2}\mathcal{J}dS + \int\frac{|\pmb{B}\cdot\nabla\rho|^2}{B^2}\mathcal{J}dS )
+	\end{equation}
+	The first term is due to motion in the $\pmb{B}\times\nabla\psi$direction.It is associated with geodesic curvature, i.e., the surface component of the magnetic field line curvature. And the second \textbf{ordinary sound propagation propagating along the field lines}.
+	
+	The physical mechanism of geodesic acoustic mode is explained as follows. An electric field pertubation $E_\psi$ causes a flow $\pmb{v_\perp}=\pmb{E}\times\pmb{B}/B^2$ and since the compressibility, the flow causes a density accumulation proportional to $-\nabla\cdot\pmb{v_\perp}=\pmb{E}\times\pmb{B}\cdot\nabla{B^2}/B^4$.This $n$ generates a current $\pmb{J}=\pmb{B}\times\nabla{n}/B^2$ which transports charge across the magnetic surface and acts to recerse $E_\psi$
+	
+	In the limit of circular cross section with large aspect ratio($r\ll R$), the dispersion relation becomes,
+	\begin{equation}
+		\omega^2=\frac{2\gamma{p_0}}{\rho_0{R}^2}[1+1/(2q^2)]=2\frac{C_s^2}{R^2}(1+1/(2q^2))
+	\end{equation}
+	with the defination of sound wave velocity in neutral gas $C_s=(\gamma{p_0}/\rho_0)^{1/2}$ .
+	
+	
+	\subsubsection{GAM in 5-field landau fluid model}
+	
+	
+	
+	
+	[reference]
+	\begin{enumerate}
+		\item Diamond PPCF 2005
+		\item Winsor POF 1968
+	\end{enumerate}
+	
+	
+	
+\end{document}

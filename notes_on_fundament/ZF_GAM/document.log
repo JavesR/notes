@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.7.6)  20 DEC 2019 16:02
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.7.6)  20 DEC 2019 15:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**energy_trans.tex
-(./energy_trans.tex
+**document.tex
+(./document.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/home/jr/software/texlive/texmf-dist/tex/latex/base/article.cls
@@ -877,8 +877,8 @@ ai-Regular}].
 . - 'italic' (m/it) with NFSS spec.: <->"[FandolKai-Regular.otf]/OT"
 . - 'italic small caps'  (m/itsc) with NFSS spec.: 
 .................................................
-(./energy_trans.aux)
-\openout1 = `energy_trans.aux'.
+(./document.aux)
+\openout1 = `document.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
@@ -994,80 +994,17 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 17.
 
 (/home/jr/software/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Overfull \hbox (17.2576pt too wide) detected at line 39
-[] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 a[]\OMS/cmsy/m/n/10.95 r[]\OML/cmm/
-m/it/10.95 ^^^ \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 (^^@ \OMS/cmsy/m/n/10
-.95 ^^@ \OT1/cmr/m/n/10.95 1)\OML/cmm/m/it/10.95 T[]\OMS/cmsy/m/n/10.95 r[]\OML
-/cmm/m/it/10.95 v \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 T[]![]\OT1/cmr/m/n/1
-0.95 ((^^@ \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 1)\OML/cmm/m/it/10.95 ^^^
- \OT1/cmr/m/n/10.95 + (2^^@ \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 1)\OML/c
-mm/m/it/10.95 T[] \OT1/cmr/m/n/10.95 + (^^@ \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/
-n/10.95 1)[]\OML/cmm/m/it/10.95 n\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^@ \
-OT1/cmr/m/n/10.95 (^^@ \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 1)[]\OMS/cmsy
-/m/n/10.95 jr[]j\OML/cmm/m/it/10.95 T[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.9
-5 D[]\OMS/cmsy/m/n/10.95 r[][]
- []
+) [1
 
-[1
-
-]
-File: ./images/tur_n_b01_40-80.png Graphic file (type bmp)
-<./images/tur_n_b01_40-80.png>
-File: ./images/tur_n_b01_40-80.png Graphic file (type bmp)
-<./images/tur_n_b01_40-80.png>
- [2]
-File: ./images/tur_n_b01_200-250.png Graphic file (type bmp)
-<./images/tur_n_b01_200-250.png>
-File: ./images/tur_n_b10_150-250.png Graphic file (type bmp)
-<./images/tur_n_b10_150-250.png>
-File: ./images/tur_t_b01.png Graphic file (type bmp)
-<./images/tur_t_b01.png>
-File: ./images/tur_t_b10.png Graphic file (type bmp)
-<./images/tur_t_b10.png>
-File: ./images/Q_tur_b01.png Graphic file (type bmp)
-<./images/Q_tur_b01.png>
-File: ./images/Q_tur_b10.png Graphic file (type bmp)
-<./images/Q_tur_b10.png>
- [3]
-File: ./images/zf_contour.png Graphic file (type bmp)
-<./images/zf_contour.png>
-File: ./images/zf_ratio.png Graphic file (type bmp)
-<./images/zf_ratio.png>
- [4]
-File: ./images/zf_b01-02-04.png Graphic file (type bmp)
-<./images/zf_b01-02-04.png>
-File: ./images/zf_b01-05-08.png Graphic file (type bmp)
-<./images/zf_b01-05-08.png>
-File: ./images/p10_b01_02-04.png Graphic file (type bmp)
-<./images/p10_b01_02-04.png>
-File: ./images/p10_b01_05-08.png Graphic file (type bmp)
-<./images/p10_b01_05-08.png>
-File: ./images/pnl_b01_02-04.png Graphic file (type bmp)
-<./images/pnl_b01_02-04.png>
-File: ./images/pnl_b01_05-08.png Graphic file (type bmp)
-<./images/pnl_b01_05-08.png>
- [5]
-File: ./images/zf_b10-02-04.png Graphic file (type bmp)
-<./images/zf_b10-02-04.png>
-File: ./images/zf_b10-05-08.png Graphic file (type bmp)
-<./images/zf_b10-05-08.png>
-File: ./images/p10_b10_02-04.png Graphic file (type bmp)
-<./images/p10_b10_02-04.png>
-File: ./images/p10_b10_05-08.png Graphic file (type bmp)
-<./images/p10_b10_05-08.png>
-File: ./images/pnl_b10_02-04.png Graphic file (type bmp)
-<./images/pnl_b10_02-04.png>
-File: ./images/pnl_b10_05-08.png Graphic file (type bmp)
-<./images/pnl_b10_05-08.png>
- [6] [7] (./energy_trans.aux) ) 
+] [2]
+[3] [4] (./document.aux) ) 
 Here is how much of TeX's memory you used:
- 13830 strings out of 492970
- 308249 string characters out of 6133099
- 402683 words of memory out of 5000000
- 17735 multiletter control sequences out of 15000+600000
- 539192 words of font info for 73 fonts, out of 8000000 for 9000
+ 13721 strings out of 492970
+ 305595 string characters out of 6133099
+ 401671 words of memory out of 5000000
+ 17656 multiletter control sequences out of 15000+600000
+ 536569 words of font info for 59 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 42i,9n,64p,10440b,251s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,12n,64p,10436b,247s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on energy_trans.pdf (7 pages).
+Output written on document.pdf (4 pages).
