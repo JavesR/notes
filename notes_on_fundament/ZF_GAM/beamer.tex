@@ -158,6 +158,11 @@
 	\omega^2=\frac{2\gamma{p_0}}{\rho_0{R}^2}[1+1/(2q^2)]=2\frac{C_s^2}{R^2}(1+1/(2q^2))
 	\end{equation}
 	with the defination of sound wave velocity in neutral gas $C_s=(\gamma{p_0}/\rho_0)^{1/2}$ .
+	
+	\begin{quote}
+		{\color{magenta} question: relation between RHF and GAM}
+	\end{quote}
+
 \end{frame}
 
 
@@ -193,9 +198,53 @@
 		=\frac{\int{f}\ d\theta{d\zeta}}{\int\ d\theta{d\zeta}}
 	\end{equation}
 	for zonal flow 
-	for pressure $p_{1,0}=pe^{i\theta}=p\cos\theta+ip\sin\theta$
-	
+	\begin{equation}
+		\frac{\partial}{\partial{t}}<v_E>
+		=-\frac{1}{r^2}\frac{\partial}{\partial{r}}r^2<v_\theta{v_r}>
+		+\frac{\beta}{n_{eq}}\frac{1}{r^2}\frac{\partial}{\partial{r}}r^2<B_\theta{B_r}>
+		-\frac{2\epsilon}{n_{eq}}<p\sin\theta>
+	\end{equation}
+	and in the code, we use the alternative expression,
+	\begin{equation}
+	\frac{\partial}{\partial{t}}<v_E>
+	=\frac{1}{r}<\phi\frac{\partial{\Omega}}{\partial\theta}>
+	+\frac{\beta}{n_{eq}}\frac{1}{r}<A\frac{\partial{A}}{\partial\theta}>
+	-\frac{2\epsilon}{n_{eq}}<p\sin\theta>
+	\end{equation} 
+	with the Fourier expansion,
+	\begin{equation}
+	\frac{\partial}{\partial{t}}<v_E>
+	=\sum_{m1+m2=0}{\phi_{m1}}{\Omega_{\theta,m2}}
+	+\sum_{m1+m2=0}{A_{m1}}{j_{\theta,m2}}
+	-\frac{i\epsilon}{n_{eq}}(p_{1,0}-p_{-1,0})
+	\end{equation} 
 \end{frame}
+	
+	
+\begin{frame}{modification of energy transfer equation}
+	as for equation for thr evolution of $<p\sin\theta>$
+	\begin{equation}
+		\frac{\partial}{\partial{t}}<p\sin\theta>
+		=<(R_Q+R_F+R_C+R_{NL}+R_{LD}+R_{S})\sin\theta>
+	\end{equation}
+
+	\begin{equation}
+	\begin{aligned}
+		<R_Q\sin\theta>&=
+		a[(1+\tau)T_{eq}\frac{\partial{n_{eq}}}{\partial{r}}+n_{eq}\frac{\partial{T_{eq}}}{\partial{r}}]<\phi\cos\theta>\\
+		&+(1+\tau)\beta{T_{eq}}\frac{\partial{j_0}}{\partial{r}}<A\cos\theta>\\
+		<R_F\sin\theta>&=
+		(\Gamma+\tau)n_{eq}T_{eq}\frac{\epsilon}{q}<v\cos\theta>
+		-(1+\tau)T_{eq}\frac{\epsilon}{q}<j\cos\theta>	\\
+		<R_C\sin\theta>&=
+		\epsilon(\Gamma+\tau)p_{eq}<v_\theta>	\\
+		&+\epsilon(2\Gamma-1)p_{eq}<\frac{\partial{T}}{\partial{r}}>
+		+\epsilon((\Gamma-1)-\tau(\tau+1))T_{eq}^2<\frac{\partial{n}}{\partial{r}}>	\\
+		<R_{LD}\sin\theta>&=
+		-(\Gamma-1)\sqrt{\frac{8T_{eq}}{\pi}}n_{eq}\frac{\epsilon}{q}<T\sin\theta>	\\
+	\end{aligned}
+	\end{equation}
+\end{frame}	
 	
 
 
