@@ -15,9 +15,29 @@
 \begin{document}
 	
 	\maketitle
-	
-\section{zonal flow}
 
+
+\section{closure for fluid moments model}
+\subsection{Hammett-Perkins closure}
+First consider the simplest case of linear one-dimensional electrostatic waves.Here's the Vlasov equations with cold ions,
+	\begin{equation}
+	\begin{aligned}
+		\frac{\partial{f}}{\partial{t}}
+		+v\frac{\partial{f}}{\partial{x}}
+		+\frac{eE}{m}\frac{\partial{f}}{\partial{v}}=0
+	\end{aligned}
+	\end{equation}	
+Consider the linear response $f=f_0(v)+\tilde{f}(x,v,t)$ to a small driving electric field $E=-\partial\tilde{\phi}/\partial{x}$ and linearize the equation with $\tilde{f}(x,v,t)\sim\exp(ikx-i\omega{t})$, the exact linear response is
+	\begin{equation}
+		\tilde{n}=\int\tilde{f}dv \equiv -n_0\frac{e\tilde{\phi}}{T_0}R(\zeta)
+		=\frac{e\tilde{\phi}}{T_0}kv_t^2\int\frac{\partial{f_0}/\partial{v}}{kv-\omega}
+	\end{equation}	
+where $R(\zeta)$ is the normalized reponse function and $\zeta=\omega/(|k|\sqrt{2}v_t)$	is a normalized frequency, $T_0=mv_t^2=m\int{f_0}v^2dv/\int{f_0}dv$
+
+	
+	
+\newpage	
+\section{zonal flow}
 
 \newpage
 \section{residula flow}	
