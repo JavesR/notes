@@ -32,8 +32,32 @@ Consider the linear response $f=f_0(v)+\tilde{f}(x,v,t)$ to a small driving elec
 		\tilde{n}=\int\tilde{f}dv \equiv -n_0\frac{e\tilde{\phi}}{T_0}R(\zeta)
 		=\frac{e\tilde{\phi}}{T_0}kv_t^2\int\frac{\partial{f_0}/\partial{v}}{kv-\omega}
 	\end{equation}	
-where $R(\zeta)$ is the normalized reponse function and $\zeta=\omega/(|k|\sqrt{2}v_t)$	is a normalized frequency, $T_0=mv_t^2=m\int{f_0}v^2dv/\int{f_0}dv$
+where $R(\zeta)$ is the normalized reponse function and $\zeta=\omega/(|k|\sqrt{2}v_t)$	is a normalized frequency, $T_0=mv_t^2=m\int{f_0}v^2dv/\int{f_0}dv$. For the maxwellian disribution $f_0=f_M$, response funtion is $R(\zeta)=1+\zeta{Z(\zeta)}=-Z'(\zeta)$, where $Z(\zeta)=\pi^{-1/2}\int{dt}\exp(-t^2)/(t-\zeta)$ is the usual plasma dispersion funtion.
 
+	Considering the moment equation sets for the particle density $n=\int{f}dv$, the momentum density $mnu=m\int{fv}dv$, and the pressure $p=m\int{f(v-u)^2dv}$,
+	\begin{equation}
+	\begin{aligned}
+	&\frac{\partial{n}}{\partial{t}}+\frac{\partial}{\partial{x}}(un)=0\\
+	&\frac{\partial}{\partial{t}}(mnu)+\frac{\partial}{\partial{x}}(umnu)=-\frac{\partial{p}}{\partial{x}}+enE-\frac{\partial{S}}{\partial{x}}	\\
+	&\frac{\partial{p}}{\partial{t}}+\frac{\partial}{\partial{x}}(up)=
+	-(\Gamma-1)(p+S)\frac{\partial{u}}{\partial{x}}-\frac{\partial{q}}{\partial{x}}
+	\end{aligned}
+	\end{equation}
+	The heat flux moment is $q=m\int{f(v-u)^3}dv$. And then what we should do is to obtain the unkown variable by compare the linear dispersion relation with the result of Vlasov equation. Here the unknown variables include $S,\Gamma,q$. First we assume linear closure approximations by 
+	\begin{equation}
+	\begin{aligned}
+	&\tilde{q_k}=-n_0\chi_1\frac{\sqrt{2}v_t}{|k|}ik\tilde{T}_k	\\
+	&\tilde{S_k}=-mn_0\mu_1\sqrt{2}(v_t/|k|)ik\tilde{u}_k
+	\end{aligned}
+	\end{equation}
+	where $\chi_1$ and $\mu_1$ are dimensionless coefficients, and $\tilde{T}=(\tilde{p}-T_0\tilde{n})/n_0$ is the pertubed temperature.
+	
+	and then linearing the equation sets leads to the following three-moment fluid model for the response function, 
+	\begin{equation}
+		R_3=\frac{\chi_1-i\zeta}{\chi_1-i\Gamma\zeta-2i\chi_1\mu_1\zeta-2\chi_1\zeta^2-2\mu_1\zeta^2+2i\zeta^3}
+	\end{equation}
+	
+	
 	
 	
 \newpage	
