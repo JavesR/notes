@@ -33,6 +33,7 @@
 			\item parallel computation scheme
 			\item comparision between different algorithms
 			\item conservation test
+			\item initial perturbation
 			\item residual flow simulation
 		\end{itemize}
 	\item residual flow and GAM
@@ -40,6 +41,41 @@
 	\item ...	
 \end{itemize}
 \end{frame}
+
+
+
+\begin{frame}{consevation test}
+	\begin{quotation}
+		{\color{magenta} question:\ accuration}
+	\end{quotation}
+	for LW2: 
+	\begin{equation}
+		\frac{f_x^t-f_x^{t-\Delta{t}}}{\Delta{t}}-\mu(\nabla_\perp^2{f})_x^{t}
+		= \frac{1}{2}( C_{x-1/2}^{t-\Delta{t}/2}+C_{x+1/2}^{t-\Delta{t}/2} )
+	\end{equation}
+	
+	\begin{equation}
+		\frac{E_x^t-E_x^{t-\Delta{t}}}{\Delta{t}}
+		= \mathcal{E}\{ \frac{1}{2}( C_{x-1/2}^{t-\Delta{t}/2}+C_{x+1/2}^{t-\Delta{t}/2} ) +\mu(\nabla_\perp^2{f})_x^{t} \}
+	\end{equation}
+	
+	\begin{quotation}
+		{\color{blue} problem:\ deviation triggered by volumn integration}
+	\end{quotation}
+	another idea:	\\
+	\qquad $E$ as a coupling equation to field equation set
+\end{frame}
+
+
+\begin{frame}{initial perturbation}
+	内容...
+\end{frame}
+
+
+\begin{frame}{residual flow test}
+	
+\end{frame}
+
 
 
 \end{document}

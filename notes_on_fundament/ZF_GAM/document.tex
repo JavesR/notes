@@ -34,6 +34,25 @@ Consider the linear response $f=f_0(v)+\tilde{f}(x,v,t)$ to a small driving elec
 	\end{equation}	
 where $R(\zeta)$ is the normalized reponse function and $\zeta=\omega/(|k|\sqrt{2}v_t)$	is a normalized frequency, $T_0=mv_t^2=m\int{f_0}v^2dv/\int{f_0}dv$. For the maxwellian disribution $f_0=f_M$, response funtion is $R(\zeta)=1+\zeta{Z(\zeta)}=-Z'(\zeta)$, where $Z(\zeta)=\pi^{-1/2}\int{dt}\exp(-t^2)/(t-\zeta)$ is the usual plasma dispersion funtion.
 
+	Expand $Z'(\zeta)$. For $|\zeta|\gg{1}$,
+	\begin{equation}
+	\begin{aligned}
+		Z'(\zeta)&=-i\frac{k}{|k|}\sqrt{\pi}2\zeta{e^{-\zeta^2}}
+		+\frac{1}{\zeta^2}+\frac{3}{2}\frac{1}{\zeta^4}+\frac{15}{4}\frac{1}{\zeta^6}+...\\
+		&\simeq \frac{1}{\zeta^2}+\frac{3}{2}\frac{1}{\zeta^4}+\frac{15}{4}\frac{1}{\zeta^6}+...
+	\end{aligned}
+	\end{equation}
+	for $|\zeta|\ll{1}$,
+	\begin{equation}
+	\begin{aligned}
+		Z'(\zeta)&=-i\frac{k}{|k|}\sqrt{\pi}2\zeta{e^{-\zeta^2}}-2+4\zeta^2-\frac{8}{3}\zeta^4+...\\
+		&\simeq -2+(-i\frac{k}{|k|}\sqrt{\pi}2)\zeta+4\zeta^2
+		+(i\frac{k}{|k|}\sqrt{\pi}2)\zeta^3-\frac{8}{3}\zeta^4+(-i\frac{k}{|k|}\sqrt{\pi})\zeta^5+...
+	\end{aligned}
+	\end{equation}
+
+
+
 	Considering the moment equation sets for the particle density $n=\int{f}dv$, the momentum density $mnu=m\int{fv}dv$, and the pressure $p=m\int{f(v-u)^2dv}$,
 	\begin{equation}
 	\begin{aligned}
@@ -56,7 +75,8 @@ where $R(\zeta)$ is the normalized reponse function and $\zeta=\omega/(|k|\sqrt{
 	\begin{equation}
 		R_3=\frac{\chi_1-i\zeta}{\chi_1-i\Gamma\zeta-2i\chi_1\mu_1\zeta-2\chi_1\zeta^2-2\mu_1\zeta^2+2i\zeta^3}
 	\end{equation}
-	
+	Note that the three-moment fluid model yields a three-pole approximation for the response function(and therefore for the plasma dispersion $Z$). The asymptotic expansion of $R_3$ in the cold-plasma limit $|\zeta|\gg{1}$ is $R_3\simeq -1/2\zeta^2+i\mu_1/2\zeta^3+...$.According to the Eq.(3), this implies that $R_3$ is equivalent to an $f_0(v)\sim const/v^2$ and hence has an infinite-pressure moment. Therefore $\mu_1=0$. Carrying the asymptotic expansion to higher order then gives us 
+	$R_3\sim -1/2\zeta^2-\Gamma/4\zeta^4+i(\Gamma-1)\chi_1/4\zeta^5+...$, which is equivalent to a more physival $f_0(v)\sim 1/v^4$. Setting $\Gamma=3$ puts the proper amount of compressional $p\partial{u}/\partial{z}$ heating into the evolution of pressure to conserve total energy. Expanding $R_3$ for $|\zeta|\ll{1}$ leads to $R_3\simeq 1+i2\zeta/\chi_1$. Requiring this to match the Maxwellian $R$ for small $\zeta$ leads to the condition $\chi_1=2/\sqrt{\pi}$.Although $\chi_1$ is chosen to fit the low-frequency limit, the closure is used in fluid equations which are automatically valid in the high-frequency limit, and the resulting $R_3$ does a fair job of approximating the Maxwellian $R$ over the full frequency range, and is equivalent to an $f_0(v)$ which is fairly close to Maxwellian. 
 	
 	
 	
