@@ -33,50 +33,13 @@
 	\begin{itemize}
 %		\item conservation test
 %		\item initial perturbation
-		\item parallel computation scheme and relevant treatment 
+%		\item parallel computation scheme
+		\item Fourier transform and relevant treatment in the simulation 
 	\end{itemize}
 \end{itemize}
 \end{frame}
 %
-%\begin{frame}
-%		\begin{figure}[H]
-%		\centering
-%		\subfigure[$\beta=0.1\%$]{
-%			\includegraphics[width=0.2\textwidth]{./images/zf_filter_b01.png} 
-%		}
-%		\subfigure[$\beta=0.3\%$]{
-%			\includegraphics[width=0.2\textwidth]{./images/zf_filter_b03.png}
-%		}
-%		\subfigure[$\beta=1.0\%$]{
-%			\includegraphics[width=0.2\textwidth]{./images/zf_filter_b10.png}
-%		}
-%		\subfigure[$\beta=1.2\%$]{
-%			\includegraphics[width=0.2\textwidth]{./images/zf_filter_b12.png}
-%		}
-%		\caption{ Time averaged zonal flow profile }
-%	\end{figure}
-%\end{frame}
-%
-%
-%\begin{frame}{}
-%\begin{figure}[H]
-%	\centering
-%	\subfigure{
-%		\includegraphics[width=0.25\textwidth]{./images/zf_filter_b01_m.png} 
-%	}
-%	\subfigure{
-%		\includegraphics[width=0.25\textwidth]{./images/zf_filter_b10_m.png}
-%	}
-%
-%	\subfigure{
-%		\includegraphics[width=0.25\textwidth]{./images/flux_b01_m.png} 
-%	}
-%	\subfigure{
-%		\includegraphics[width=0.25\textwidth]{./images/flux_b10_m.png}
-%	}
-%	\caption{  }
-%\end{figure}
-%\end{frame}
+
 
 \begin{frame}{Spectral Method(Fourier transform )}
 	\begin{equation}
@@ -98,15 +61,20 @@
 \begin{frame}
 	for linear terms $L(x)$:
 	\begin{equation}
-		\mathcal{F}(L(x))=
+		\mathcal{F}(L(x))= L_k(k)
 	\end{equation}
 	
 	for nonlinear terms $A(x)B(x)$:
 	\begin{equation}
 		\begin{aligned}
-			\mathcal{F}(A(x)B(x))=
+			\mathcal{F}(A(x)B(x))
+			&=\mathcal{F}[\mathcal{F}^{-1}(A_k(k))\cdot\mathcal{F}^{-1}(B_k(k))]	\\
+			&\sim A_k(k)\ast B_k(k)
 		\end{aligned}
 	\end{equation}
+	if $1/N$ in forward process, $$\mathcal{F}(A(x)B(x))= A_k(k)\ast B_k(k)$$
+	
+	if $1/N$ in backward process, $$\mathcal{F}(A(x)B(x))= \frac{1}{N}A_k(k)\ast B_k(k)$$
 \end{frame}
 
 
@@ -152,6 +120,7 @@
 			f(\theta,\phi)e^{-i2\pi{n}z/N}]e^{-i2\pi{m}y/M}	\\
 			&f(y,z) = \sum_{m=0}^{M-1}[\sum_{n=0}^{N-1}
 			f(m,n)e^{i2\pi{n}z/N}]e^{i2\pi{m}y/M}
+			=\sum_{m=0}^{M-1}\sum_{n=0}^{N-1}f(m,n)e^{i{m\theta+n\zeta}}
 		\end{aligned}
 	\end{equation}
 
@@ -166,7 +135,7 @@
 \end{frame}
 
 
-\begin{frame}
+\begin{frame}{2D Parallel Fourier Transform using P3DFFT}
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.8\textwidth]{./images/2d_kd.png}
@@ -175,18 +144,74 @@
 \end{frame}
 
 
-\begin{frame}{1D MPI + OpenMP}
-	sorting 
-\end{frame}
-
-\begin{frame}{1D MPI + OpenMP}
-	2D decomposition
-\end{frame}
-
-\begin{frame}{Result Comparision}
+\begin{frame}{Result Comparision of poisson bracket calculation}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{./images/poisson.png}
+		\caption{$[n,\phi]$ in different method for poisson bracket calculation}
+	\end{figure}
 	
 \end{frame}
 
+
+\begin{frame}
+		\begin{figure}[H]
+		\centering
+		\subfigure[$\beta=0.1\%$]{
+			\includegraphics[width=0.2\textwidth]{./images/zf_filter_b01.png} 
+		}
+		\subfigure[$\beta=0.3\%$]{
+			\includegraphics[width=0.2\textwidth]{./images/zf_filter_b03.png}
+		}
+		\subfigure[$\beta=1.0\%$]{
+			\includegraphics[width=0.2\textwidth]{./images/zf_filter_b10.png}
+		}
+		\subfigure[$\beta=1.2\%$]{
+			\includegraphics[width=0.2\textwidth]{./images/zf_filter_b12.png}
+		}
+		\caption{ Time averaged zonal flow profile }
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\subfigure[$\beta=0.1\%$]{
+			\includegraphics[width=0.2\textwidth]{./images/flux_b01.png} 
+		}
+		\subfigure[$\beta=0.3\%$]{
+			\includegraphics[width=0.2\textwidth]{./images/flux_b03.png}
+		}
+		\subfigure[$\beta=1.0\%$]{
+			\includegraphics[width=0.2\textwidth]{./images/flux_b10.png}
+		}
+		\subfigure[$\beta=1.2\%$]{
+			\includegraphics[width=0.2\textwidth]{./images/flux_b12.png}
+		}
+		\caption{ Time averaged transport flux profile }
+	\end{figure}
+
+\end{frame}
+
+
+\begin{frame}{}
+\begin{figure}[H]
+	\centering
+	\subfigure{
+		\includegraphics[width=0.25\textwidth]{./images/zf_filter_b01_m.png} 
+	}
+	\subfigure{
+		\includegraphics[width=0.25\textwidth]{./images/zf_filter_b10_m.png}
+	}
+
+	\subfigure{
+		\includegraphics[width=0.25\textwidth]{./images/flux_b01_m.png} 
+	}
+	\subfigure{
+		\includegraphics[width=0.25\textwidth]{./images/flux_b10_m.png}
+	}
+	\caption{  }
+\end{figure}
+\end{frame}
 
 
 
